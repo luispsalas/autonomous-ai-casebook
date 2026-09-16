@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Credentials — never commit
+.env
+.env.*
+secrets/
+**/secrets/
+*token*.json
+*credential*.json
+*service?account*.json
+
+# Working material that must never enter this repo.
+# It lives in a separate private working folder; these lines are a guard in case it is ever copied in.
+CONTEXT.md
+transcripts/
+backups/
