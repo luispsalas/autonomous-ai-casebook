@@ -66,8 +66,9 @@ We don't publish technical detail beyond what the original sources themselves pu
 
 | Entry | Tier | Last revised |
 |---|---|---|
+| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) — *draft for review* | Full | September 16, 2026 |
 
-*Only published entries are listed here. None are published yet.*
+*Only published entries will be listed here. While the repository is private, entries under review are listed and marked as drafts.*
 
 ## Contributing and reporting corrections
 
