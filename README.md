@@ -57,13 +57,13 @@ No list of AI incidents is complete, this one included. **If an incident isn't h
 
 Every entry follows the same structure, so incidents can be compared field by field:
 
-- **Briefing:** a short name, a one-line description and a summary you can read in under a minute
-- **Timeline:** including how long the incident went unnoticed
-- **Who and what:** the organizations, models and agents involved
-- **What happened:** told once technically and once in plain terms
+- **Briefing:** a short name, a one-line description, a summary you can read in under a minute, the key events and how long the incident went unnoticed
+- **What happened:** told once in plain terms and once technically
+- **Who was involved:** the organizations, models and agents
 - **Analysis:** causes from more than one perspective, recommendations, and governance
 - **Confidence and corrections:** what the claims rest on, and what the sources got wrong
 - **Context and open questions**
+- **Reference:** the full timeline, tags, sources and version history
 
 **Tiers:** *Full* entries rest on at least one primary source; *Provisional* entries rely on secondary sources for now and say so.
 

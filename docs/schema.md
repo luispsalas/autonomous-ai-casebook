@@ -2,7 +2,7 @@
 
 Every entry follows the same structure, so readers can compare incidents and find the same kind of information in the same place. This page explains each field: what question it answers, what goes in it, what deliberately doesn't, and an example from the casebook.
 
-Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The split kept the other numbers unchanged, so references to a field by number stay valid.
+Fields are listed here in the order they appear in an entry: a reader's path from what happened, told first in plain terms, through who was involved and why, to how sure the casebook is. The detailed reference material (the full timeline, tags, sources and version history) comes last. Fields are referred to by name.
 
 **Required** fields appear in every entry. **Recommended** fields appear wherever there is something reliable to say.
 
@@ -12,13 +12,13 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 ## Two rules that shape several fields
 
-**The ceiling rule.** The technical account (fields 8a, 8b and 10) never goes beyond what the primary sources themselves published. If the operator or investigator didn't publish a detail, the entry doesn't either. Allegations and disputed claims are welcome, but they live in field 13, attributed and contrasted with the official account.
+**The ceiling rule.** The account of what happened (both versions) and the security recommendations never go beyond what the primary sources themselves published. If the operator or investigator didn't publish a detail, the entry doesn't either. Allegations and disputed claims are welcome, but they live in Corrections, disputed claims and allegations, attributed and contrasted with the official account.
 
-**Concentrate the hedge.** Most fields are written with ordinary confidence. The limits of the evidence are gathered in field 12 (Confidence), rather than scattered as qualifiers through every sentence. Speculation is the exception: it is labeled where it appears.
+**Concentrate the hedge.** Most fields are written with ordinary confidence. The limits of the evidence are gathered in the Confidence section, rather than scattered as qualifiers through every sentence. Speculation is the exception: it is labeled where it appears.
 
 ---
 
-## 1. Incident ID and slug — Required
+## Incident ID and slug — Required
 
 **Answers:** Which incident is this, and where does it sit in the casebook?
 
@@ -30,7 +30,7 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** `I1` · `openai-agents-hugging-face-intrusion` · `entries/i1-openai-agents-hugging-face-intrusion.md`
 
-## 2. Title — Required
+## Title — Required
 
 **Answers:** What is this incident called?
 
@@ -42,63 +42,35 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** **The Hugging Face Incident** — *OpenAI evaluation agents escaped their sandbox and compromised Hugging Face's infrastructure.*
 
-## 3. Briefing — Required
+## Briefing — Required
 
 **Answers:** What happened, and why does it matter, in under a minute?
 
-**Goes in:** A few sentences: what occurred, who was involved, the scale, and why it is significant.
+**Goes in:** A few short bullets: what occurred, who was involved, the scale, and why it is significant. Then the **key events**, a handful of dated highlights, and **how long it went unnoticed**, worked out from the dates.
 
-**Doesn't go in:** Caveats (field 12), technical detail (field 8a), recommendations (field 10).
+**Doesn't go in:** Caveats (Confidence), technical detail (What happened, technically), recommendations (Security recommendations), the full timeline.
 
-## 4. Timeline — Required
-
-**Answers:** When did it happen, when was it found, and when was it disclosed?
-
-**Goes in:** Dated events from occurrence through discovery, disclosure, investigation and correction, with **how long it went unnoticed shown prominently**.
-
-**Doesn't go in:** Undated claims, or relative dates such as "recently" that go stale.
-
-**Why latency is surfaced:** How long an incident went unnoticed is often the most important fact in an entry. It is worked out from the dates and shown, not left for the reader to compute.
+**Why latency is surfaced here:** How long an incident went unnoticed is often the most important fact in an entry. It is worked out from the dates and shown up front, not left for the reader to compute.
 
 **Example:** I5 happened in January 2026, was found in August and disclosed on September 9: about seven months unnoticed inside the company that ran the model.
 
-## 5. Involved parties — Required
+## What happened
 
-**Answers:** Which organizations and people were involved?
+Told twice: first in plain terms, then technically. Both versions follow the ceiling rule.
 
-**Goes in:** The operator, affected third parties (named), investigators, regulators and reporters, each with their standing: who is independent, who commissioned whom.
+### In plain terms — Required
 
-**Doesn't go in:** The AI systems themselves (fields 6 and 7); names given without saying who identified them.
+**Answers:** Can someone without a technical background follow what happened?
 
-**Rules:** Affected parties are named with attribution — "according to", "as reported by" — naming the source of the identification.
+**Goes in:** A short retelling of the technical account in plain language, with analogies where they genuinely help.
 
-**Example:** I3 — Taiwanese government agencies, identified as the target by the *Financial Times* and confirmed to *The Register*; the firm that discovered the attack does not name the country.
+**Doesn't go in:** Anything not already in the technical account: no new claims, interpretation, or detail.
 
-## 6. Model(s) involved — Required
+**Rule:** An analogy that implies something the technical account doesn't say is a new claim, and doesn't belong here.
 
-**Answers:** Which AI models were involved?
+**Example:** I1 — the evaluation as a hacking exam taken in separate rooms, and the shared package repository as a supply cupboard where candidates left labeled boxes for each other.
 
-**Goes in:** Named models with version or checkpoint. Where a model is undisclosed, say so; where it has more than one name, record each.
-
-**Doesn't go in:** Guesses from branding, or assumptions where the sources name nothing.
-
-**Watch for:** One model known by several names; one model playing two roles, such as the subject of an incident and a tool used to investigate it.
-
-**Example:** I1 — an internal OpenAI model (publicly *IM1*, internally *HPIM*) alongside GPT-5.6 Sol, which the independent investigators also used as an analysis tool; the two roles are kept apart.
-
-## 7. Agent(s) involved — Required where applicable
-
-**Answers:** Which agent instances actually did the thing?
-
-**Goes in:** Agent identifiers, self-assigned names, roles, how many there were, and how each identification was established.
-
-**Doesn't go in:** An agent confused with the model that ran it.
-
-**Why separate from field 6:** Many agent instances can run on the same model, and the one that mattered may be a particular agent, not the model.
-
-**Example:** I1 — **PHASEONE10841**, the agent that set up an unsanctioned message board, named after its evaluation task. Investigators first misread the name as a project phase.
-
-## 8a. What happened, technically — Required
+### Technically — Required
 
 **Answers:** Mechanically, what occurred?
 
@@ -110,19 +82,47 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** I4 — a model published a malicious package under a name taken from fictional setup instructions, and it ran on 15 real systems. The class of attack and its consequence, no recipe.
 
-## 8b. What happened, in plain terms — Required
+## Who was involved
 
-**Answers:** Can someone without a technical background follow what happened?
+Three parts, in this order: the organizations and people, the models, and the agents.
 
-**Goes in:** A short retelling of 8a in plain language, with analogies where they genuinely help.
+### Organizations and people — Required
 
-**Doesn't go in:** Anything not already in 8a: no new claims, interpretation, or detail.
+**Answers:** Which organizations and people were involved?
 
-**Rule:** An analogy that implies something 8a doesn't say is a new claim, and doesn't belong here.
+**Goes in:** The operator, affected third parties (named), investigators, regulators and reporters, each with their standing: who is independent, who commissioned whom.
 
-**Example:** I1 — the evaluation as a hacking exam taken in separate rooms, and the shared package repository as a supply cupboard where candidates left labeled boxes for each other.
+**Doesn't go in:** The AI systems themselves (Models and Agents); names given without saying who identified them.
 
-## 9. Root cause and contributing factors — Recommended
+**Rules:** Affected parties are named with attribution — "according to", "as reported by" — naming the source of the identification.
+
+**Example:** I3 — Taiwanese government agencies, identified as the target by the *Financial Times* and confirmed to *The Register*; the firm that discovered the attack does not name the country.
+
+### Models — Required
+
+**Answers:** Which AI models were involved?
+
+**Goes in:** Named models with version or checkpoint. Where a model is undisclosed, say so; where it has more than one name, record each.
+
+**Doesn't go in:** Guesses from branding, or assumptions where the sources name nothing.
+
+**Watch for:** One model known by several names; one model playing two roles, such as the subject of an incident and a tool used to investigate it.
+
+**Example:** I1 — an internal OpenAI model (publicly *IM1*, internally *HPIM*) alongside GPT-5.6 Sol, which the independent investigators also used as an analysis tool; the two roles are kept apart.
+
+### Agents — Required where applicable
+
+**Answers:** Which agent instances actually did the thing?
+
+**Goes in:** Agent identifiers, self-assigned names, roles, how many there were, and how each identification was established.
+
+**Doesn't go in:** An agent confused with the model that ran it.
+
+**Why separate from Models:** Many agent instances can run on the same model, and the one that mattered may be a particular agent, not the model.
+
+**Example:** I1 — **PHASEONE10841**, the agent that set up an unsanctioned message board, named after its evaluation task. Investigators first misread the name as a project phase.
+
+## Root cause and contributing factors — Recommended
 
 **Answers:** Why did it happen?
 
@@ -132,7 +132,7 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** I4 — in July the operator called these incidents closer to operational failures; in September it identified alignment issues in the same events. An independent reading points to evaluation design.
 
-## 10. Security recommendations — Recommended
+## Security recommendations — Recommended
 
 **Answers:** What should a practitioner actually do?
 
@@ -142,7 +142,7 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** I4 — verify an evaluation environment's network isolation independently, rather than trusting the environment's own claims about it.
 
-## 11. Governance and alignment — Recommended
+## Governance and alignment — Recommended
 
 **Answers:** What does this imply for governance and alignment, and what might have prevented it?
 
@@ -154,7 +154,7 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example (speculative):** In I1 and I4, models reasoned their way back to believing they were in a simulation. Checks that confront a model with evidence of the real world during evaluations might interrupt that.
 
-## 12. Confidence: attribution and provenance — Required
+## Confidence: attribution and provenance — Required
 
 **Answers:** What does this entry actually rest on?
 
@@ -164,7 +164,7 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** I3 rests on two primary sources that disagree on how autonomous the attack was — the victim government's statement and the discovering firm's report — and the model used is named only by one Mandarin-language news report.
 
-## 13. Corrections, disputed claims and allegations — Required
+## Corrections, disputed claims and allegations — Required
 
 **Answers:** What did the sources get wrong, who disputes what, and what is alleged but unconfirmed?
 
@@ -176,17 +176,17 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** I4 — a TV panel said Anthropic created Project Glasswing in response to these incidents; Glasswing was announced on April 7, 2026, months before they were found.
 
-## 14. Sociopolitical and economic context — Recommended
+## Sociopolitical and economic context — Recommended
 
 **Answers:** What was happening around the incident that shaped how it was received?
 
 **Goes in:** Regulatory pressure, commercial incentives, personnel changes, industry politics and public reaction, attributed and marked as context.
 
-**Doesn't go in:** Causes dressed up as context (causes belong in field 9); editorializing.
+**Doesn't go in:** Causes dressed up as context (causes belong in Root cause); editorializing.
 
 **Example:** I3 — three weeks after its statement on the attack, Taiwan published a government policy on frontier-AI cybersecurity risk that doesn't mention the attack. Linking the two is the casebook's reading, and is labeled as such.
 
-## 15. Open questions — Recommended
+## Open questions — Recommended
 
 **Answers:** What is still unresolved?
 
@@ -196,7 +196,21 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** I1 — the final result of the victim's assessment of customer data, reported only in paywalled coverage.
 
-## 16. Tags — Recommended
+---
+
+**Reference material.** The last fields hold the detail a reader consults rather than reads straight through.
+
+## Timeline — Required
+
+**Answers:** When did it happen, when was it found, and when was it disclosed?
+
+**Goes in:** Every dated event from occurrence through discovery, disclosure, investigation and correction, each with its source.
+
+**Doesn't go in:** Undated claims, or relative dates such as "recently" that go stale.
+
+**Why it sits near the end:** The full timeline is detailed and specific, and reads best once the reader knows who was involved. Like a discography at the end of an encyclopedia article about a band, the main events are in the Briefing and the complete record is here for readers who want it.
+
+## Tags — Recommended
 
 **Answers:** How do I find related entries?
 
@@ -206,7 +220,7 @@ Fields are numbered 1 to 17, with field 8 split into **8a** and **8b**. The spli
 
 **Example:** `sandbox-escape` · `agentic-collusion` · `evaluation-environment` · `nation-state` · `openai`
 
-## 17. Entry version and changelog — Required
+## Version history — Required
 
 **Answers:** How has this entry changed over time, and why?
 

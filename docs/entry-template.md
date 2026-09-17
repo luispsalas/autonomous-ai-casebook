@@ -1,6 +1,6 @@
 <!--
 Copy this file to entries/i<N>-<slug>.md and fill in every Required field.
-Field numbers match docs/schema.md. Remove the guidance comments before publishing.
+Sections follow docs/schema.md, in the same order. Remove the guidance comments before publishing.
 -->
 
 # I<N> · <Short handle>
@@ -9,71 +9,88 @@ Field numbers match docs/schema.md. Remove the guidance comments before publishi
 
 **Tier:** Full | Provisional · **Version:** v0.1 · **Last revised:** <Month D, YYYY>
 
+**Contents:** [Briefing](#briefing) · [What happened](#what-happened) · [Who was involved](#who-was-involved) · [Root cause](#root-cause-and-contributing-factors) · [Recommendations](#security-recommendations) · [Governance](#governance-and-alignment) · [Confidence](#confidence-attribution-and-provenance) · [Corrections](#corrections-disputed-claims-and-allegations) · [Context](#sociopolitical-and-economic-context) · [Open questions](#open-questions) · [Timeline](#timeline) · [Sources](#sources) · [Version history](#version-history)
+
 ---
 
-## 3. Briefing
+## Briefing
 
-<!-- Required. Under a minute to read: what happened, who, scale, why it matters. No caveats (they go in 12). -->
+<!-- Required. Short bullets, under a minute to read: what happened, who, scale, why it matters. No caveats (they go in Confidence). -->
 
-## 4. Timeline
+- **What happened:**
+- **Why it matters:**
 
-<!-- Required. Dated events: occurred → discovered → disclosed → investigated → corrected. -->
+**Key events** (the full record is in the [Timeline](#timeline)):
+
+- **<Date>:** <event> (<source>)
+
+**How long it went unnoticed** (worked out from the dates in the Timeline):
+
+- <duration>
+
+## What happened
+
+### In plain terms
+
+<!-- Required. A plain-language retelling of the technical account. No new claims. Prose suits an analogy. -->
+
+### Technically
+
+<!-- Required. Ceiling rule: nothing beyond what the primary sources published; no recipes. Use a numbered list for a chain of steps. -->
+
+## Who was involved
+
+### Organizations and people
+
+<!-- Required. Named, with standing and attribution ("according to ..."). -->
+
+### Models
+
+<!-- Required. Names and versions; say if undisclosed; record every name a model goes by. -->
+
+### Agents
+
+<!-- Required where applicable. Identifiers, roles, numbers, and how each identification was established. -->
+
+## Root cause and contributing factors
+
+<!-- Recommended. Operator's framing AND an independent framing. -->
+
+## Security recommendations
+
+<!-- Recommended. Concrete controls, addressed to whoever owns the exposure. -->
+
+## Governance and alignment
+
+<!-- Recommended. Group items under bold labels: Speculative, Observations, Caution, Open. -->
+
+## Confidence: attribution and provenance
+
+<!-- Required. What each key claim rests on and how it was checked; each party's standing as its own bullet. -->
+
+## Corrections, disputed claims and allegations
+
+<!-- Required. Errors in sources, live disputes, allegations, attributed and contrasted with the official account. Group under bold labels when the list is long. -->
+
+## Sociopolitical and economic context
+
+<!-- Recommended. Context, not cause. Attributed. Group by party when the list is long. -->
+
+## Open questions
+
+<!-- Recommended. Specific, named gaps. -->
+
+---
+
+## Timeline
+
+<!-- Required. Every dated event: occurred → discovered → disclosed → investigated → corrected. -->
 
 | Date | Event | Source |
 |---|---|---|
 |  |  |  |
 
-**Unnoticed for:** <duration, worked out from the dates above>
-
-## 5. Involved parties
-
-<!-- Required. Named, with standing and attribution ("according to ..."). -->
-
-## 6. Model(s) involved
-
-<!-- Required. Names and versions; say if undisclosed; record every name a model goes by. -->
-
-## 7. Agent(s) involved
-
-<!-- Required where applicable. Identifiers, roles, numbers, and how each identification was established. -->
-
-## 8a. What happened, technically
-
-<!-- Required. Ceiling rule: nothing beyond what the primary sources published; no recipes. -->
-
-## 8b. What happened, in plain terms
-
-<!-- Required. A plain-language retelling of 8a. No new claims. -->
-
-## 9. Root cause and contributing factors
-
-<!-- Recommended. Operator's framing AND an independent framing. -->
-
-## 10. Security recommendations
-
-<!-- Recommended. Concrete controls, addressed to whoever owns the exposure. -->
-
-## 11. Governance and alignment
-
-<!-- Recommended. Label speculation where it appears. -->
-
-## 12. Confidence: attribution and provenance
-
-<!-- Required. Prose: what each key claim rests on and how it was checked. -->
-
-## 13. Corrections, disputed claims and allegations
-
-<!-- Required. Errors in sources, live disputes, allegations — attributed and contrasted with the official account. -->
-
-## 14. Sociopolitical and economic context
-
-<!-- Recommended. Context, not cause. Attributed. -->
-
-## 15. Open questions
-
-<!-- Recommended. Specific, named gaps. -->
-
-## 16. Tags
+## Tags
 
 <!-- Recommended. From the fixed vocabulary only. -->
 
@@ -84,7 +101,7 @@ Field numbers match docs/schema.md. Remove the guidance comments before publishi
 | ID | Title | Outlet / creator | Format | Type | Link | Archived copy | Archive check | Accessed | Published | Read status |
 |---|---|---|---|---|---|---|---|---|---|---|
 
-## 17. Version history
+## Version history
 
 <!-- Required. Newest first. Dated, and about substance, not wording. -->
 
@@ -92,4 +109,4 @@ Field numbers match docs/schema.md. Remove the guidance comments before publishi
 
 ---
 
-*Fields 1 (ID and slug) and 2 (title) are carried by the file name and the heading above.*
+*ID and slug are carried by the file name; the title is the heading and description above.*
