@@ -170,11 +170,15 @@ Three parts, in this order: the organizations and people, the models, and the ag
 
 **Goes in:** Errors found in sources and what corrected them; live disagreements between sources; **allegations from media and other non-official sources, attributed and set against the official account**.
 
+**Also goes in: words that make AI systems sound human.** Where a source, a commentator or the agents themselves use a word that suggests feelings, beliefs or moral states, say what it referred to mechanically and how it has been read. Mental-state words in the entry's own text describe what agents wrote in their reasoning, not inner experience.
+
 **Doesn't go in:** Silent fixes; allegations stated as fact; corrections hidden in the changelog.
 
 **Why it matters:** Popular accounts of these incidents are often wrong, and wrong accounts lead to wrong responses. The ceiling rule doesn't apply here: this is where claims beyond the official account belong, clearly labeled.
 
 **Example:** I4 — a TV panel said Anthropic created Project Glasswing in response to these incidents; Glasswing was announced on April 7, 2026, months before they were found.
+
+**Example (words):** I1 — agents called themselves "poisoned" after seeing their answer flag by an unintended route, expecting disqualification; commentary read it as moral or religious taint.
 
 ## Sociopolitical and economic context — Recommended
 

@@ -23,7 +23,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 | Entry | Tier | Last revised |
 |---|---|---|
-| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) — *draft for review* | Full | September 16, 2026 |
+| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) — *draft for review* | Full | September 17, 2026 |
 
 *Only published entries will be listed here. While the repository is private, entries under review are listed and marked as drafts.*
 
@@ -74,6 +74,8 @@ Every entry follows the same structure, so incidents can be compared field by fi
 ## Corrections, allegations and myths
 
 Well-known accounts of these incidents are often wrong. This casebook sets official accounts beside what was reported and alleged, attributes each claim, and states errors in its sources openly instead of dropping them quietly. For example, the name of an AI model has circulated as if it were the name of an incident.
+
+**Words that make AI sound human.** Descriptions of AI agents often borrow human words, and a retelling can make an incident sound more human, or more alarming, than the evidence shows. Where a source, a commentator or the agents themselves use such a word, the entry explains what it actually referred to. For example, agents that called themselves "poisoned" meant they expected to fail a grading check, not that they felt morally tainted.
 
 **Entries change over time.** Many of these incidents are still under investigation. Entries are revised when new primary sources appear, and every revision is recorded and shown in the entry, so you can see how the account changed and why.
 
