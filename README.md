@@ -5,8 +5,6 @@
   </picture>
 </p>
 
-> **Status: private draft for review.** The structure and reference pages are in place; entries are being added.
-
 In-depth reconstructions of incidents where an AI system's autonomy was central to real-world security harm, built from primary sources. **Each entry separates what was established from what was alleged, and shows every revision.**
 
 | Read the cases | Check the work |
@@ -23,9 +21,9 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 | Entry | Tier | Last revised |
 |---|---|---|
-| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) — *draft for review* | Full | September 17, 2026 |
+| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Full | September 17, 2026 |
 
-*Only published entries will be listed here. While the repository is private, entries under review are listed and marked as drafts.*
+*Entries are added as they are finished, and each shows when it was last revised.*
 
 ## Why this exists
 
