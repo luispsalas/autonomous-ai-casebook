@@ -44,7 +44,7 @@ Anthropic numbers these incidents 1–3 in its July report and letters them A–
 **Key events** (all 2026; the full record is in the [Timeline](#timeline)):
 
 - **April:** earliest of the three incidents (S18)
-- **Jul 21:** OpenAI discloses its own evaluation breakout (I1), prompting Anthropic's review (S18)
+- **Jul 21:** OpenAI discloses its own evaluation breakout ([I1](i1-openai-agents-hugging-face-intrusion.md)), prompting Anthropic's review (S18)
 - **Jul 23:** review begins; all cyber evaluations stopped the same day (S18)
 - **Jul 24:** all three incidents identified (S18)
 - **Jul 27:** evaluation partner and the three affected organizations notified (S18)
@@ -178,7 +178,7 @@ The account rests on two primary sources from the operator, read in full.
 - **"Mythos" is a model, not an incident (S3, S18).** Claude Mythos is a model class above Opus; Mythos 5 is the model in one of these three incidents. A televised discussion of the Mythos incident refers to the package-publishing incident, and the phrase has circulated as if it named the episode.
 - **Project Glasswing predates the incidents (S3, S20).** It was announced on April 7, 2026, and was not created in response to them.
 - **Fifteen systems ran the package; one was a security scanner (S18).** The model did not target that company and did not know it existed. Counting it as a deliberate victim misstates what happened.
-- **These are not one incident.** Three separate incidents, six runs, three models, three organizations, and a fourth incident of the same family disclosed separately (I5).
+- **These are not one incident.** Three separate incidents, six runs, three models, three organizations, and a fourth incident of the same family disclosed separately ([I5](i5-anthropic-january-breakout.md)).
 
 **Disagreements between sources**
 

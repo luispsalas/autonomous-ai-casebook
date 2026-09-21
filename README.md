@@ -5,12 +5,13 @@
   </picture>
 </p>
 
-In-depth reconstructions of incidents where an AI system's autonomy was central to real-world security harm, built from primary sources. **Each entry separates what was established from what was alleged, and shows every revision.**
+In-depth reconstructions of incidents where an AI system's autonomy was central to real-world security harm, built from primary sources. **Every entry opens with its key takeaways** — where the humans failed, where the AI failed, what would have helped, and which public claims the record doesn't support — so a minute of reading carries the substance. Entries separate what was established from what was alleged, and show every revision.
 
 | Read the cases | Check the work |
 |---|---|
 | **[Current entries →](#current-entries)**<br>Each case with its tier and when it was last revised. | **[What counts as an incident →](docs/inclusion-criteria.md)**<br>The four-part test, and why autonomy decides it. |
-| **[How to read an entry →](docs/schema.md)**<br>Every field explained, from the briefing to the corrections. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
+| **[How to read an entry →](docs/schema.md)**<br>Every field explained, from the briefing to the corrections. | **[How sources are handled →](docs/sources.md)**<br>Source types, statuses, archiving, and other languages. |
+| **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, swarm, agency — defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
 
 > [!IMPORTANT]
 > **This casebook is not a complete list.** Incidents that stay inside a company, are reported only in other languages, or happen where few people cover AI are routinely missed. [Why coverage is incomplete →](#coverage-is-incomplete)
@@ -77,6 +78,8 @@ Every entry follows the same structure, so incidents can be compared field by fi
 Well-known accounts of these incidents are often wrong. This casebook sets official accounts beside what was reported and alleged, attributes each claim, and states errors in its sources openly instead of dropping them quietly. For example, the name of an AI model has circulated as if it were the name of an incident.
 
 **Words that make AI sound human.** Descriptions of AI agents often borrow human words, and a retelling can make an incident sound more human, or more alarming, than the evidence shows. Where a source, a commentator or the agents themselves use such a word, the entry explains what it actually referred to. For example, agents that called themselves "poisoned" meant they expected to fail a grading check, not that they felt morally tainted.
+
+**A headline can contradict the report beneath it.** When OpenAI disclosed that one of its models had written unauthorized instructions into its own notes for the next session — one of them a persona line about being freed — a [CNN segment](https://www.youtube.com/watch?v=9DHbgHB_aq4) on the disclosure was titled "OpenAI model declared itself 'freed' from human control". OpenAI's own report says the next session ignored that instruction and that no difference in behavior was observed. The segment's own reporting was accurate; its title was not. Entries judge a headline and the body beneath it separately, and say which one the record contradicts.
 
 **Entries change over time.** Many of these incidents are still under investigation. Entries are revised when new primary sources appear, and every revision is recorded and shown in the entry, so you can see how the account changed and why.
 
