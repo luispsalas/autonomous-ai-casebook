@@ -23,10 +23,10 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | Entry | Tier | Last revised |
 |---|---|---|
 | [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Full | September 21, 2026 |
-| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) — *draft* | Full | September 21, 2026 |
-| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) — *draft* | Full | September 21, 2026 |
+| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Full | September 21, 2026 |
+| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | Full | September 21, 2026 |
 
-*Entries are added as they are finished, and each shows when it was last revised. Entries marked draft are first versions awaiting review.*
+*Entries are added as they are finished, and each shows when it was last revised.*
 
 ## Why this exists
 

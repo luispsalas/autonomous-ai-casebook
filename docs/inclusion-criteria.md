@@ -25,6 +25,8 @@ Deliberate misuse is included, and so are accidents. An incident is in scope whe
 
 **Harms that aren't about security.** Bias and hallucination cause real harm, but they belong in broader databases such as the [AI Incident Database](https://incidentdatabase.ai/).
 
+**Incidents in war and intelligence will be the least evidenced, and that is structural.** Accounts come from unnamed sources, no primary document is released, the operator does not answer questions, and nothing is ever confirmed on the record — so a case can be serious, widely reported and still unresolvable on the evidence the tiers ask for. **Obscurity is not a reason to lower the bar, and it is not a reason to forget the case either:** such a case is held as Adjacent and revisited when more emerges, rather than being admitted on the strength of how alarming it is. Expect this class to grow.
+
 ## Tiers
 
 | Tier | Requires | What it means for readers |
@@ -72,3 +74,4 @@ Judge on what actually happened, not on which component was involved. A compromi
 | Model weights stolen from a lab | No: the AI is the target, not the actor | Out of scope |
 | Poisoned data caught before deployment, never acted on | No: nothing happened through autonomy | Adjacent: a near-miss |
 | A compromised ML library | No: a conventional supply-chain attack | Out of scope |
+| **A false intelligence report written with a chatbot nearly triggers a US boarding of a Chinese ship** (reported September 2026) | No: the model produced an analysis, an analyst disseminated it, and commanders acted on it | **Adjacent: a near-miss.** The nearest thing to a catastrophe in anything tracked here, and it clears no part of the autonomy test — which is why it is worth citing |
