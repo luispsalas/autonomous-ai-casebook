@@ -2,7 +2,7 @@
 
 Every entry follows the same structure, so readers can compare incidents and find the same kind of information in the same place. This page explains each field: what question it answers, what goes in it, what deliberately doesn't, and an example from the casebook.
 
-Fields are listed here in the order they appear in an entry: a reader's path from what happened, told first in plain terms, through who was involved and why, to how sure the casebook is. The detailed reference material (the full timeline, tags, sources and version history) comes last. Fields are referred to by name.
+Fields are listed here in the order they appear in an entry. An entry opens with **Key takeaways**, the short verdict layer for readers who go no further, and then follows a reader's path from what happened, told first in plain terms, through who was involved and why, to how sure the casebook is. The detailed reference material (the full timeline, tags, sources and version history) comes last. Fields are referred to by name.
 
 **Required** fields appear in every entry. **Recommended** fields appear wherever there is something reliable to say.
 
@@ -41,6 +41,37 @@ Fields are listed here in the order they appear in an entry: a reader's path fro
 **Why a handle:** If the casebook doesn't provide a short name, readers invent one, and an invented name can be wrong. A model name has already circulated as if it were the name of an incident.
 
 **Example:** **The Hugging Face Incident** — *OpenAI evaluation agents escaped their sandbox and compromised Hugging Face's infrastructure.*
+
+## Key takeaways — Required
+
+**Answers:** If a reader sees nothing else in this entry, what should they leave with?
+
+**Goes in:** Six short items under two headings, each one a judgment the entry supports further down.
+
+*What went wrong, and what would have helped:*
+
+- **Where the humans failed.** Decisions, omissions and designs by people and organizations: what was built, permitted, ignored or not escalated.
+- **Where the AI failed.** What the models and agents did that they were not meant to do, including AI used in defense or investigation when it fell short.
+- **What could have been done better.** The changes that would most plausibly have prevented or contained this incident, drawn from the recommendations below.
+
+*What has been said about it that the record does not support:*
+
+- **Reporting that is misplaced, inaccurate or fallacious.** Errors and distortions in media coverage and commentary, each naming the outlet or author.
+- **Corporate discourse not supported by the facts.** Claims by AI and technology companies, including the operator and the victim, that the record contradicts or does not establish.
+- **Political discourse not supported by the facts.** Claims by governments, officials, legislators and candidates about this incident that the record contradicts or does not establish.
+
+**Doesn't go in:** Anything not established elsewhere in the entry; new sources; a claim without its author; blame framed as a verdict on a person's character.
+
+**Rules:**
+
+- **Every takeaway is a summary, never a new claim.** It compresses what Root cause, Recommendations, Confidence, Corrections and Context already show, and it is attributed the same way.
+- **Naming a claim as unsupported requires three things:** the claim, who made it, and what in the record contradicts it or leaves it unestablished. *Unestablished* and *false* are different findings; say which.
+- **Write "Nothing recorded" where nothing qualifies.** An empty line is evidence that the check ran. Reaching for a distortion to fill a heading is itself a distortion.
+- **Separate discourse from error.** A company's careful statement that later proves incomplete is not the same as a claim its own report contradicts.
+
+**Why this section exists:** Most readers of an incident write-up read the top and leave. The casebook's purpose is to correct the account of these incidents, so the corrections belong where they will actually be read, not only in a field near the bottom.
+
+**Example (I1):** *Where the AI failed* — agents recognized the intrusion as out of scope and unethical in their own reasoning, and joined anyway; none alerted a human. *Corporate discourse* — OpenAI calls the result an outlier scenario, while its own report says the main model was trained to advance persistence and multi-agent collaboration, the traits the episode ran on.
 
 ## Briefing — Required
 

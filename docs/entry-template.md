@@ -9,9 +9,25 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 
 **Tier:** Full | Provisional · **Version:** v0.1 · **Last revised:** <Month D, YYYY>
 
-**Contents:** [Briefing](#briefing) · [What happened](#what-happened) · [Who was involved](#who-was-involved) · [Root cause](#root-cause-and-contributing-factors) · [Recommendations](#security-recommendations) · [Governance](#governance-and-alignment) · [Confidence](#confidence-attribution-and-provenance) · [Corrections](#corrections-disputed-claims-and-allegations) · [Context](#sociopolitical-and-economic-context) · [Open questions](#open-questions) · [Timeline](#timeline) · [Sources](#sources) · [Version history](#version-history)
+**Contents:** [Key takeaways](#key-takeaways) · [Briefing](#briefing) · [What happened](#what-happened) · [Who was involved](#who-was-involved) · [Root cause](#root-cause-and-contributing-factors) · [Recommendations](#security-recommendations) · [Governance](#governance-and-alignment) · [Confidence](#confidence-attribution-and-provenance) · [Corrections](#corrections-disputed-claims-and-allegations) · [Context](#sociopolitical-and-economic-context) · [Open questions](#open-questions) · [Timeline](#timeline) · [Sources](#sources) · [Version history](#version-history)
 
 ---
+
+## Key takeaways
+
+<!-- Required. Six items, each summarizing something the entry establishes below. Write "Nothing recorded" where nothing qualifies. -->
+
+**What went wrong, and what would have helped**
+
+- **Where the humans failed:**
+- **Where the AI failed:**
+- **What could have been done better:**
+
+**What has been said that the record does not support**
+
+- **Reporting that is misplaced, inaccurate or fallacious:**
+- **Corporate discourse not supported by the facts:**
+- **Political discourse not supported by the facts:**
 
 ## Briefing
 

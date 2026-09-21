@@ -21,7 +21,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 | Entry | Tier | Last revised |
 |---|---|---|
-| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Full | September 17, 2026 |
+| [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Full | September 20, 2026 |
 
 *Entries are added as they are finished, and each shows when it was last revised.*
 
@@ -55,6 +55,7 @@ No list of AI incidents is complete, this one included. **If an incident isn't h
 
 Every entry follows the same structure, so incidents can be compared field by field:
 
+- **Key takeaways:** where the humans failed, where the AI failed, what would have helped, and which claims about the incident — in reporting, from companies, from politicians — the record doesn't support
 - **Briefing:** a short name, a one-line description, a summary you can read in under a minute, the key events and how long the incident went unnoticed
 - **What happened:** told once in plain terms and once technically
 - **Who was involved:** the organizations, models and agents
