@@ -7,6 +7,7 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 **Required** fields appear in every entry. **Recommended** fields appear wherever there is something reliable to say.
 
 → A blank entry to copy: [entry template](entry-template.md)
+→ How the contested words are used — incident, intrusion, attack, swarm, agency, hazard: [Terminology](terminology.md)
 
 ---
 

@@ -22,8 +22,10 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | Entry | Tier | Last revised |
 |---|---|---|
 | [I1 · The Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Full | September 20, 2026 |
+| [I4 · The Evaluation Breakouts (A–C)](entries/i4-anthropic-evaluation-breakouts.md) — *draft* | Full | September 20, 2026 |
+| [I5 · The January Breakout (D)](entries/i5-anthropic-january-breakout.md) — *draft* | Full | September 20, 2026 |
 
-*Entries are added as they are finished, and each shows when it was last revised.*
+*Entries are added as they are finished, and each shows when it was last revised. Entries marked draft are first versions awaiting review.*
 
 ## Why this exists
 
@@ -68,7 +70,7 @@ Every entry follows the same structure, so incidents can be compared field by fi
 
 **Confidence and sources.** Sources are not interchangeable: a company's own disclosure, an independent investigation, a news report and a machine-generated transcript each support different things. Every entry's Confidence section explains what its claims rest on and how they were checked. Speculation is labeled as speculation. Sources in languages other than English are labeled with their language, and a detail that appears only in one language's press is flagged as single-sourced.
 
-→ Every field explained: [Entry schema](docs/schema.md) · Source types, statuses and archiving: [How sources are handled](docs/sources.md)
+→ Every field explained: [Entry schema](docs/schema.md) · Source types, statuses and archiving: [How sources are handled](docs/sources.md) · What the contested words mean here: [Terminology](docs/terminology.md)
 
 ## Corrections, allegations and myths
 
