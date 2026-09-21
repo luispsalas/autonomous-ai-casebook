@@ -1,8 +1,8 @@
-# I4 · The Evaluation Breakouts (A–C)
+# I4 · The Anthropic Capture-the-Flag Breakouts
 
 *Told they were in a simulation with no internet, three Claude models in a partner's capture-the-flag environment reached the open internet through a misconfiguration and compromised three real organizations, treating them as part of the exercise.*
 
-**Tier:** Full · **Version:** v0.3 · **Last revised:** September 21, 2026
+**Tier:** Full · **Version:** v0.4 · **Last revised:** September 21, 2026
 
 Anthropic numbers these incidents 1–3 in its July report and letters them A–C in its September assessment; the numbering and the lettering are not in the same order (see Corrections). No name for the group has been published, so the handle above is this casebook's. **The Mythos incident is not a name for it:** Claude Mythos 5 is one of the models involved.
 
@@ -279,6 +279,7 @@ How long the incidents went unnoticed, worked out from these dates, is summarize
 
 Newest first.
 
+- **v0.4 (September 21, 2026):** renames the entry from *The Evaluation Breakouts (A–C)* to *The Anthropic Capture-the-Flag Breakouts*. The old handle was generic and the letters meant nothing to a reader arriving cold; *capture the flag* is the operator's own term for the exercise, and naming the operator is what makes the entry findable when the affected organizations are undisclosed. The lettering is stated below the title instead. The file path is unchanged.
 - **v0.3 (September 21, 2026):** adds an administration adviser's characterization of this operator's pacing essay, checked against the essay itself: it does not call for a complete stop, and its antitrust request is a narrow waiver for safety conversations rather than protection from competition.
 - **v0.2 (September 21, 2026):** first assessed political claims, separating the part this record tests — denial of real-world consequences, and the reported absence of any public incident-reporting process — from predictions about competitive cost, which are recorded as context and not assessed.
 - **v0.1 (September 20, 2026):** first draft, from Anthropic's two reports (S18, S19) read in full, with the Project Glasswing announcement (S20) used to date that program and a television panel (S3) recorded only for the two errors it introduced. Incident letters mapped to models from the September report's figure. No independent account exists yet; METR's investigation is pending.

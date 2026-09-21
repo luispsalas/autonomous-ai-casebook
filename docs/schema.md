@@ -41,7 +41,7 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 
 **Why a handle:** If the casebook doesn't provide a short name, readers invent one, and an invented name can be wrong. A model name has already circulated as if it were the name of an incident.
 
-**Example:** **The Hugging Face Incident** — *OpenAI evaluation agents escaped their sandbox and compromised Hugging Face's infrastructure.*
+**Example:** **The OpenAI–Hugging Face Incident** — *OpenAI evaluation agents broke out of their sandbox and compromised Hugging Face's infrastructure.* **Name the responsible party as well as the victim** where both are public: a handle carrying only the victim's name reads as though the incident originated there.
 
 ## Key takeaways — Required
 
