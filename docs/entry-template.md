@@ -21,7 +21,11 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 
 - **Where the humans failed:**
 - **Where the AI failed:**
-- **What could have been done better:**
+- **What could have been done better:** <3–5 bullets, one change each, each able to stand alone>
+  - 
+  - 
+
+*These are the changes that would most plausibly have altered this incident. The generalized controls, addressed to whoever owns each exposure, are in [Security recommendations](#security-recommendations).*
 
 **What has been said that the record does not support**
 

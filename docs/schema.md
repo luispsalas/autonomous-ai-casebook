@@ -53,7 +53,7 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 
 - **Where the humans failed.** Decisions, omissions and designs by people and organizations: what was built, permitted, ignored or not escalated.
 - **Where the AI failed.** What the models and agents did that they were not meant to do, including AI used in defense or investigation when it fell short.
-- **What could have been done better.** The changes that would most plausibly have prevented or contained this incident, drawn from the recommendations below.
+- **What could have been done better.** Three to five **bullets**, each one change that would most plausibly have prevented or contained *this* incident. This is the one takeaway written as a list: the other five stay in prose, because they carry attribution and hedges that bullets strip. The item closes with a pointer to Security recommendations, so a reader can see the two are different jobs rather than a repetition.
 
 *What has been said about it that the record does not support:*
 
@@ -63,10 +63,20 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 
 **Doesn't go in:** Anything not established elsewhere in the entry; new sources; a claim without its author; blame framed as a verdict on a person's character.
 
+**How this differs from Security recommendations:** the takeaway is **counterfactual and specific** — what would have changed this outcome. Security recommendations are **general and addressed to an owner** — what any comparable organization should do, including controls this incident only hints at. The takeaway bullets are therefore a subset in substance but not in wording, and each entry links from one to the other.
+
+**Write each bullet to stand on its own,** one change per bullet, no cross-references in the text: they are meant to be collected across entries into a single lessons page once there are enough of them, and a bullet that says "as above" cannot travel.
+
 **Rules:**
 
 - **Every takeaway is a summary, never a new claim.** It compresses what Root cause, Recommendations, Confidence, Corrections and Context already show, and it is attributed the same way.
 - **Naming a claim as unsupported requires three things:** the claim, who made it, and what in the record contradicts it or leaves it unestablished. *Unestablished* and *false* are different findings; say which.
+**What qualifies as a political claim** *(provisional — agreed September 2026, not yet exercised on a real claim)*. A statement by a government, official, legislator or candidate enters an entry only when it is **a factual claim about this incident or about the evidence base**, which the record can speak to — for example that no real-world consequences have followed from AI agents, or that developers disclose such events promptly. Three consequences:
+
+- **Predictions and value judgments are context, not takeaways.** That pausing development would forfeit a lead, or that the economic upside outweighs the risk, cannot be tested against an incident record. They are recorded in Sociopolitical and economic context, attributed, and marked as not assessed — saying so is itself informative.
+- **The same test applies to every actor.** A company arguing for slower development is making a claim with an interest behind it exactly as a government arguing for speed is, and both are checked the same way. If only one side's claims are ever examined, the section is an argument rather than a record.
+- **Check the claim, not the speaker.** Quote it, name who said it and when, state what the record shows, and stop. No characterization of motive, and no position on the policy itself.
+
 - **Write "Nothing recorded" where nothing qualifies.** An empty line is evidence that the check ran. Reaching for a distortion to fill a heading is itself a distortion.
 - **Separate discourse from error.** A company's careful statement that later proves incomplete is not the same as a claim its own report contradicts.
 
