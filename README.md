@@ -67,7 +67,7 @@ Every entry follows the same structure, so incidents can be compared field by fi
 - **Context and open questions**
 - **Reference:** the full timeline, tags, sources and version history
 
-**Tiers:** *Full* entries rest on at least one primary source; *Provisional* entries rely on secondary sources for now and say so.
+**Tiers:** *Full* entries rest on at least one primary source; *Provisional* entries rely on secondary sources for now and say so; *Disputed* entries are ones where the people closest to the incident give first-hand accounts that contradict each other about whether the AI acted on its own, and the entry sets those accounts side by side rather than choosing between them.
 
 **Confidence and sources.** Sources are not interchangeable: a company's own disclosure, an independent investigation, a news report and a machine-generated transcript each support different things. Every entry's Confidence section explains what its claims rest on and how they were checked. Speculation is labeled as speculation. Sources in languages other than English are labeled with their language, and a detail that appears only in one language's press is flagged as single-sourced.
 

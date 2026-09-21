@@ -7,7 +7,7 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 
 *<One-line description>*
 
-**Tier:** Full | Provisional · **Version:** v0.1 · **Last revised:** <Month D, YYYY>
+**Tier:** Full | Provisional | Disputed · **Version:** v0.1 · **Last revised:** <Month D, YYYY>
 
 **Contents:** [Key takeaways](#key-takeaways) · [Briefing](#briefing) · [What happened](#what-happened) · [Who was involved](#who-was-involved) · [Root cause](#root-cause-and-contributing-factors) · [Recommendations](#security-recommendations) · [Governance](#governance-and-alignment) · [Confidence](#confidence-attribution-and-provenance) · [Corrections](#corrections-disputed-claims-and-allegations) · [Context](#sociopolitical-and-economic-context) · [Open questions](#open-questions) · [Timeline](#timeline) · [Sources](#sources) · [Version history](#version-history)
 

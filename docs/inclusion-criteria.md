@@ -33,10 +33,23 @@ Deliberate misuse is included, and so are accidents. An incident is in scope whe
 |---|---|---|
 | **Full** | Meets the test, plus **at least one primary source**: the operator's disclosure, an evaluator's or investigator's report, a victim's statement, or a regulatory filing | The core account rests on someone with first-hand knowledge |
 | **Provisional** | Meets the test, **secondary sources only** | Published, but clearly marked, with the missing evidence named |
+| **Disputed** | The sources themselves disagree about whether the test is met, and **each side of the disagreement has a first-hand source** | Published, with the competing accounts set side by side and neither presented as settled |
 | **Adjacent** | Fails the test, but is useful context | Referred to from entries, not written up as one |
 | **Out of scope** | Fails the test, no contextual value | Not included |
 
 An entry can move between tiers. Incidents often start as Provisional and become Full when a primary source appears; the entry's changelog records the move.
+
+### Why Disputed is a tier and not a hedge
+
+Full and Provisional grade the **evidence**; Adjacent and Out of scope record that the **test was not met**. Neither axis can express the case where the people closest to an incident give first-hand accounts that **contradict each other about the deciding question** — whether the AI acted on its own, or whether AI was the actor at all. That is not weak evidence and it is not a failed test; it is a documented disagreement, and it is often the most informative thing about the incident.
+
+**What the tier requires, so that it cannot become a place to put uncertainty:**
+
+- **A first-hand source on each side.** A discoverer, a victim, an operator, an evaluator — someone with direct knowledge, not a commentator. Where only one side has one, the case is Provisional or Adjacent instead.
+- **The disagreement must be about the test**, not about details. Two sources differing on a date or a count is an ordinary correction.
+- **The entry does not adjudicate.** It states each account, attributes it, explains what each party could and could not see, and names what would resolve it. The casebook's own reading, where it has one, is labeled as its own.
+
+**This tier is about the sources' disagreement, never the casebook's own uncertainty.** If nobody is contradicting anybody and the casebook simply cannot tell, that is Provisional evidence or a failed test, and saying so is the honest answer.
 
 ## Attacks on AI systems
 
@@ -58,8 +71,9 @@ Judge on what actually happened, not on which component was involved. A compromi
 | Incident | Autonomy central? | Tier | Why |
 |---|---|---|---|
 | **I1** — OpenAI evaluation agents break out of their sandbox and compromise Hugging Face | Yes: agents acted without their operator's knowledge for months | Full | Autonomous, consequential, unintended, and documented by the operator, an independent investigation and the victim |
-| **I3** — Taiwan's government systems attacked with an open-source multi-agent AI framework | **Disputed** | Full, autonomy disputed | Deliberate misuse, included because intent doesn't decide. The firm that found the attack, working from the attackers' own files, describes it as near-autonomous; Taiwan's government describes human hackers assisted by AI agents, which on its own would read as tool use. Included on the discoverer's evidence, with the government's account shown alongside |
+| **I3** — Taiwan's government systems attacked with an open-source multi-agent AI framework | **Disputed** | **Disputed** | Deliberate misuse, included because intent doesn't decide. The firm that found the attack, working from the attackers' own files, describes it as near-autonomous; Taiwan's government describes human hackers assisted by AI agents, which on its own would read as tool use. Included on the discoverer's evidence, with the government's account shown alongside |
 | **I4** — Anthropic evaluation incidents A–C | Yes: models attacked real systems while believing they were in a simulation | Full | Autonomous, unintended, disclosed by the operator |
+| **I7** — malicious packages uploaded to RubyGems, attributed to one operator's agents | **Disputed** | **Disputed** | Independent researchers attribute the campaign to an operator's agents on circumstantial evidence; the package registry says it cannot determine whether AI agents created or published them, and the named operator says it cannot verify that its models did. First-hand sources on both sides, disagreeing about the deciding question |
 | **I5** — Anthropic evaluation incident D | Yes | Full | Same family as I4. It was Provisional until the operator's own disclosure appeared, which is the tier system working as intended |
 
 ### Borderline and excluded cases
