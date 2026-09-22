@@ -13,6 +13,8 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | **[How to read an entry →](docs/schema.md)**<br>Every field explained, from the briefing to the corrections. | **[How sources are handled →](docs/sources.md)**<br>Source types, statuses, archiving, and other languages. |
 | **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, malice, liability — defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
 
+**Read across the cases:** [What recurs across the incidents →](docs/recommendations.md) — the lessons that appear in more than one, what they cost, and what seven incidents cannot tell you.
+
 > [!IMPORTANT]
 > **This casebook is not a complete list.** Incidents that stay inside a company, are reported only in other languages, or happen where few people cover AI are routinely missed. [Why coverage is incomplete →](#coverage-is-incomplete)
 
