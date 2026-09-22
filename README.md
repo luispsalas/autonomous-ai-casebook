@@ -24,6 +24,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 |---|---|---|---|
 | [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | Full | September 22, 2026 |
 | [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) | May – Jul 2026 · ~7 weeks | Full | September 22, 2026 |
+| [I3 · The Taiwan Government Attack](entries/i3-taiwan-government-attack.md) — *draft* | July 2026 · 4 days | Disputed | September 22, 2026 |
 | [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | Full | September 22, 2026 |
 | [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 · a single run | Full | September 22, 2026 |
 | [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | July 2026 · 4 days, 122 runs | Full | September 22, 2026 |
