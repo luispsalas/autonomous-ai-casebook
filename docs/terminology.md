@@ -71,6 +71,20 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 
 **Why entries name hazards:** the most transferable part of a case is usually the hazard, not the exploit. Another organization cannot reuse a model's specific route, but it can find the same hazard in its own setup.
 
+## Liability
+
+**Not used** as a conclusion in the casebook's own voice. Liability is legal responsibility for harm, decided by a court or a regulator under a named instrument. **No incident in this casebook has been adjudicated anywhere**, so an entry calling a party liable would be asserting a legal fact that does not yet exist.
+
+**Used for** reporting that someone else has asserted, denied, assigned or is investigating it: a regulatory finding, a filing, a congressional letter, a company's own statement about its obligations. The entry attributes the claim and says what stage it is at.
+
+**Say instead** what the record supports, which is usually more useful anyway: who **operated** the system, who **set the conditions** it ran under, who **disclosed**, who **notified** affected parties, who **bore the cost**, and which obligations a source names. Those are observable and sourced; liability is a verdict.
+
+**Accountability is not a synonym, and is also handled carefully.** Where entries use it, it means *operational ownership of a failure* — whose decision, whose environment, whose control — and it belongs in [Root cause](schema.md#root-cause-and-contributing-factors) and Governance. It carries no legal weight, and an entry should not let it imply any.
+
+**Why it matters here.** Several incidents run through a **third-party evaluation partner** whose misconfiguration is the proximate cause while the operator ran the model; one runs through a **government institute** that was operator, victim-side responder and investigator at once; and in others the party that bore the cost — a volunteer moderator, two open-source maintainers — has no relationship with anyone involved. Each of those is a liability-shaped question, and each is recorded as an **open question** rather than answered. Entries also name real organizations, which is the second reason the line is drawn here: an unadjudicated claim that a named party is liable is not a finding, it is an accusation.
+
+**Related and not the same:** [maliciousness](#malicious-maliciousness) is also a finding about people, and the casebook *does* assess it — from the record, in stated layers. The difference is the forum: maliciousness can be read from what the actors did and said; liability requires someone with authority to decide it, and nobody has.
+
 ## Other words entries watch
 
 | Word | Convention |

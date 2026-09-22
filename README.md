@@ -11,7 +11,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 |---|---|
 | **[Current entries →](#current-entries)**<br>Each case with its tier, how long it ran and when it was last revised. | **[What counts as an incident →](docs/inclusion-criteria.md)**<br>The four-part test, and why autonomy decides it. |
 | **[How to read an entry →](docs/schema.md)**<br>Every field explained, from the briefing to the corrections. | **[How sources are handled →](docs/sources.md)**<br>Source types, statuses, archiving, and other languages. |
-| **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, swarm, agency — defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
+| **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, malice, liability — defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
 
 > [!IMPORTANT]
 > **This casebook is not a complete list.** Incidents that stay inside a company, are reported only in other languages, or happen where few people cover AI are routinely missed. [Why coverage is incomplete →](#coverage-is-incomplete)
@@ -28,6 +28,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | Full | September 22, 2026 |
 | [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 · a single run | Full | September 22, 2026 |
 | [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | July 2026 · 4 days, 122 runs | Full | September 22, 2026 |
+| [I7 · The RubyGems Package Flood](entries/i7-rubygems-gemstuffer.md) — *draft* | May – Jun 2026 · 2 days, then a tail | Disputed | September 22, 2026 |
 
 *Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped — by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
 
