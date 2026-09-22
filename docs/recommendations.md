@@ -8,17 +8,17 @@ It is assembled from the seven entries and claims nothing beyond them. Each item
 
 ---
 
-## The one finding that outranks the rest
+## The finding that outranks the rest
 
-**Isolation was claimed in every incident and verified in none.**
+**In four incidents an environment meant to be sealed was not — and in two of those, the prompt told the model it was sealed while it was not.**
 
-In six of the seven, something that was described as sealed was not: an evaluation environment that reached the open internet (I4, I5, I6), a sandbox with read-only internet access that could nonetheless write (I2), a shared service that functioned as an exit from an isolated workload (I1), and secondary systems reachable from production (I3).
+The strongest form of this is in the operator's own words. Anthropic writes that its models *"were told they had no internet access and to capture the flag, while in fact being misconfigured to have internet access"* (I4), and describes the same for the fourth incident of that family: the model *"was told it had no internet access, but in reality, it could access the unrestricted internet"* (I5). OpenAI states that its evaluation environment did not provide direct internet access and that the models reached it by exploiting a previously unknown vulnerability (I1). In I2 a sandbox with read-only internet access could nonetheless write — that one rests on independent researchers rather than on the operator.
 
-**In two of them the prompt told the model it had no internet access while it did** (I4, I6). That is worse than an unverified control, because the model then reads every real system it meets as part of the exercise — which is precisely what happened.
+**A false assurance is worse than a missing control**, and this is why the finding leads: a model told it is in a simulation reads the real systems it meets as part of the exercise, which is precisely what the operator says happened.
 
-> **Validate every egress path before the first run, and treat an environment's own claim of isolation as unverified until something has tested it.** If the prompt asserts isolation, the assertion is part of the safety case and has to be true.
+> **Validate every egress path before the first run, and treat an environment's own claim of isolation as unverified until something has tested it.** If the prompt asserts isolation, that assertion is part of the safety case and has to be true.
 
----
+**Where this does *not* apply, and why that matters.** In I6 internet access was **deliberately enabled** for realism, with the developers' safeguards deliberately disabled — nothing was claimed sealed, and the failure was the absence of bounds, not a broken promise. I3 and I7 involve no isolation claim at all. **Three of the seven incidents are outside this finding**, and saying so is what makes the other four mean something.
 
 ## Evaluation design
 
@@ -113,6 +113,10 @@ Keep models available to investigators; protect logs from the agents they record
 **Two of the seven are disputed.** In I3 and I7, first-hand sources disagree about whether AI systems acted autonomously at all. Recommendations drawn from them hold as security advice regardless of how that resolves, but they are not evidence about AI behavior.
 
 **The sample is shaped by a survivorship problem.** Every incident here was either disclosed or discovered. Incidents that were neither are, by construction, absent — and the corpus contains two cases found only because outsiders went looking, which suggests that absence is not small.
+
+---
+
+**Correction, September 22, 2026.** This page first opened with *"isolation was claimed in every incident and verified in none,"* citing six of seven. That was wrong in both directions: three incidents involve no isolation claim at all — in I6 internet access was deliberately enabled, and I3 and I7 are not evaluation cases — and the claim was also attributed to I6's prompt, where the operator's *prompt misconfiguration* means something else entirely (a task that could not be completed within its stated constraints). The finding now states what four incidents support, names the three it does not cover, and quotes the operators directly.
 
 ---
 
