@@ -9,7 +9,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 | Read the cases | Check the work |
 |---|---|
-| **[Current entries →](#current-entries)**<br>Each case with its tier, when it started and when it was last revised. | **[What counts as an incident →](docs/inclusion-criteria.md)**<br>The four-part test, and why autonomy decides it. |
+| **[Current entries →](#current-entries)**<br>Each case with its tier, how long it ran and when it was last revised. | **[What counts as an incident →](docs/inclusion-criteria.md)**<br>The four-part test, and why autonomy decides it. |
 | **[How to read an entry →](docs/schema.md)**<br>Every field explained, from the briefing to the corrections. | **[How sources are handled →](docs/sources.md)**<br>Source types, statuses, archiving, and other languages. |
 | **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, swarm, agency — defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
 
@@ -20,13 +20,14 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 ## Current entries
 
-| Entry | Started | Tier | Last revised |
+| Entry | Active | Tier | Last revised |
 |---|---|---|---|
-| [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | April 2026 | Full | September 21, 2026 |
-| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | April 2026 | Full | September 21, 2026 |
-| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 | Full | September 21, 2026 |
+| [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | Full | September 22, 2026 |
+| [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) — *draft* | May – Jul 2026 · ~7 weeks | Full | September 22, 2026 |
+| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | Full | September 21, 2026 |
+| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 · a single run | Full | September 21, 2026 |
 
-*Entries are added as they are finished, and each shows when it was last revised.* **Started** is the earliest activity the record establishes, which is not when anyone noticed: each of these ran for months before it was found, and the entry's timeline gives the exact dates.
+*Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped — by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
 
 ## Why this exists
 
