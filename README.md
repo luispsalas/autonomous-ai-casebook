@@ -23,9 +23,9 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | Entry | Active | Tier | Last revised |
 |---|---|---|---|
 | [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | Full | September 22, 2026 |
-| [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) — *draft* | May – Jul 2026 · ~7 weeks | Full | September 22, 2026 |
-| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | Full | September 21, 2026 |
-| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 · a single run | Full | September 21, 2026 |
+| [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) | May – Jul 2026 · ~7 weeks | Full | September 22, 2026 |
+| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | Full | September 22, 2026 |
+| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 · a single run | Full | September 22, 2026 |
 
 *Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped — by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
 
@@ -59,11 +59,11 @@ No list of AI incidents is complete, this one included. **If an incident isn't h
 
 Every entry follows the same structure, so incidents can be compared field by field:
 
-- **Key takeaways:** where the humans failed, where the AI failed, what would have helped, and which claims about the incident — in reporting, from companies, from politicians — the record doesn't support
+- **Key takeaways:** where the humans failed, where the AI failed, whether anyone was malicious, what would have helped, and which claims about the incident — in reporting, from companies, from politicians — the record doesn't support
 - **Briefing:** a short name, a one-line description, a summary you can read in under a minute, the key events and how long the incident went unnoticed
 - **What happened:** told once in plain terms and once technically
 - **Who was involved:** the organizations, models and agents
-- **Analysis:** causes from more than one perspective, recommendations, and governance
+- **Analysis:** causes from more than one perspective, whether anyone intended harm, recommendations, and governance
 - **Confidence and corrections:** what the claims rest on, and what the sources got wrong
 - **Context and open questions**
 - **Reference:** the full timeline, tags, sources and version history

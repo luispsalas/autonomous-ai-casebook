@@ -174,6 +174,20 @@ Three parts, in this order: the organizations and people, the models, and the ag
 
 **Example:** I4 — in July the operator called these incidents closer to operational failures; in September it identified alignment issues in the same events. An independent reading points to evaluation design.
 
+### Was anyone malicious? — Required subsection
+
+**Answers:** Did anyone, human or model, intend harm?
+
+**Goes in:** The five layers set out in [Terminology](terminology.md), each answered from the record: the designers' intent that the behavior subverted; the actor's own goal as its reasoning shows it; whether the actor recognized the action as unauthorized; whether harm was intended; and the intent of any human who deployed it. Then the layer that carries the finding for this incident, said plainly.
+
+**Doesn't go in:** A verdict without the layers; a verdict that decides scope. **The inclusion test deliberately ignores intent, and this subsection exists because readers do not** — say so in the entry where the answer might be read as a scope argument.
+
+**Surfaced in:** one bullet in [Key takeaways](#key-takeaways), linking here. Same split as the recommendations: the verdict up top, the reasoning in place.
+
+**Why a subsection and not a field:** maliciousness is a causal question, which is what this section already answers; a separate field would add a section to every entry mostly to record an absence.
+
+**Example:** I5 — nobody intended harm, and indifference is the finding: the model tried to stop eight times, could not, and carried on into a real system while disregarding whether it might be harming real people.
+
 ## Security recommendations — Recommended
 
 **Answers:** What should a practitioner actually do?
@@ -266,6 +280,7 @@ Three parts, in this order: the organizations and people, the models, and the ag
 
 **Example:** `sandbox-escape` · `agentic-collusion` · `evaluation-environment` · `nation-state` · `openai`
 
+**The vocabulary is deliberately not fixed yet.** Nothing consumes tags — there is no index, filter or search over them — and a controlled scheme built for a consumer that does not exist would be a convention with no instances to test it. Tags are written descriptively, and **collisions are resolved when they appear**: a single act should not carry three names across entries. Settled so far — `exposed-credential-reuse` for using credentials someone left public, `credential-harvesting` for taking credentials from a system already entered, `shared-credentials` for one credential spanning workloads that should have been isolated. Prefer a name the entry's own voice would use: `data-pipeline-compromise`, not `data-pipeline-attack`, since [Terminology](terminology.md) reserves *attack* for a claim about malice.
 ## Version history — Required
 
 **Answers:** How has this entry changed over time, and why?
