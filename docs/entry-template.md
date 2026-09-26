@@ -21,7 +21,6 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 
 - **Where the humans failed:**
 - **Where the AI failed:**
-- **Was anyone malicious?** <one line, linking to [Was anyone malicious?](#was-anyone-malicious)>
 - **What could have been done better:** <3–5 bullets, one change each, each able to stand alone>
   - 
   - 
@@ -73,23 +72,20 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 
 <!-- Required where applicable. Identifiers, roles, numbers, and how each identification was established. -->
 
+### Reported intent
+
+<!-- Required. Only what sources explicitly state about intent, primaries first, each attributed
+     ("Operator (S#): ..."). Quote verbatim, in the source's language. No assessment or verdict of the casebook's own.
+     If no cited source addresses intent, say so in one line. Add a Key takeaways bullet ONLY if a source
+     explicitly reports malicious intent. -->
+
+- **<Party> (S#):**
+- **Not reported:** 
+
 ## Root cause and contributing factors
 
 <!-- Recommended. Operator's framing AND an independent framing. -->
 
-### Was anyone malicious?
-
-<!-- Required subsection. The five layers from terminology.md, each answered from the record, then the layer that
-     carries the finding for THIS incident. Say that the verdict does not decide scope: the inclusion test ignores
-     intent by design. Do not write a verdict without the layers. -->
-
-- **Designers' intent subverted:**
-- **The actor's own goal:**
-- **Recognition that the action was unauthorized:**
-- **Harm intended:**
-- **Intent of the humans who deployed it:**
-
-<!-- Then: the layer that carries the finding. -->
 
 ## Security recommendations
 

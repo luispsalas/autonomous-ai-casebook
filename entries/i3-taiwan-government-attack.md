@@ -2,7 +2,7 @@
 
 *Over four days in July 2026, a multi-agent framework built on off-the-shelf models compromised Taiwanese government systems — and the two first-hand accounts of it disagree about the thing this casebook exists to decide: whether the AI was running the attack or assisting the people who were.*
 
-**Tier:** Disputed · **Version:** v0.1 · **Last revised:** September 22, 2026
+**Tier:** Disputed · **Version:** v0.2 · **Last revised:** September 26, 2026
 
 No name for this has been published, so the handle is this casebook's. **This entry uses *attack*, which the rest of the casebook avoids** ([Terminology](../docs/terminology.md) reserves the word for a claim about malice): here both accounts describe a deliberate compromise of another state's systems by someone who meant to do it, so the word is accurate rather than inherited.
 
@@ -16,7 +16,7 @@ No name for this has been published, so the handle is this casebook's. **This en
 
 - **Where the humans failed.** On the victim side: secondary systems — backup and test environments — were reachable and were used as springboards into production, and a single starting point led to 21 connected systems because the identity architecture was mapped from it. On the attacker side there is no failure to record; the humans there got what they wanted.
 - **Where the AI failed.** Depending on which account you take, either it did not fail at all because it was a tool, or it planned and adapted a four-day campaign with minimal direction. **What both accounts agree on** is that the model's refusals were circumvented by framing the work as authorized penetration testing, and that the speed and breadth of the operation are what made it distinctive.
-- **Was anyone malicious? Yes — and this is the only entry in the casebook where the answer is yes.** See [Was anyone malicious?](#was-anyone-malicious).
+- **Reported intent: a deliberate attack by human operators, on both first-hand accounts.** The victim government attributes it to overseas hackers, and the discoverer found model refusals bypassed by a false claim of authorization; the two disagree about how much the AI did, not about who meant it. See [Reported intent](#reported-intent).
 - **What could have been done better.** The changes that would most plausibly have altered this outcome:
   - Treat backup and test systems as production for the purposes of segmentation. Both accounts name them as the route in.
   - Assume an identity provider is a map. One compromised entry point yielded the national single-sign-on architecture.
@@ -78,6 +78,14 @@ The victim government's account describes the same capability differently: AI ag
 
 Up to eight sub-agents per wave, lettered, with Agent A through Agent Q observed across the campaign (S41). They are the attacker's own construction, not a vendor product.
 
+### Reported intent
+
+What the sources state about intent, each attributed. The casebook reports these statements and does not assess intent itself (see [Terminology](../docs/terminology.md#malicious-maliciousness)).
+
+- **Victim government (S40):** Taiwan's Administration for Cyber Security attributes the attack to 「境外駭客」 (overseas hackers) and describes 「駭客操作結合Open Claw等AI Agent輔助攻擊的混合模式」 (a hybrid of hacker operation and AI-agent-assisted attack, the casebook's translation).
+- **Discovering firm (S41):** DREAM reports that the framework's model refusals were bypassed by framing all activity as "authorized penetration testing", and that linguistic analysis of its documentation "points to a Chinese-language operator".
+- **Where they agree:** both accounts attribute the intent to the humans who ran the framework. Their dispute is about autonomy (see [Confidence](#confidence-attribution-and-provenance)).
+
 ## Root cause and contributing factors
 
 **Stated by the victim government (S40).** Secondary systems — backup and test environments — were usable as springboards into more important ones. The government frames its response around monitoring, cross-agency intelligence sharing and protective guidance for AI-derived threats.
@@ -85,18 +93,6 @@ Up to eight sub-agents per wave, lettered, with Agent A through Agent Q observed
 **Stated by the discoverer (S41).** A single compromised starting point exposed the identity architecture, which converted one foothold into a map of 21 systems. Unauthenticated API endpoints allowed record extraction without credentials. And the models' own safeguards were defeated by a framing, not by a technical bypass.
 
 **What neither establishes.** Why the agents were as effective as they were, and how much direction they received. That is the disputed question, and it is not a root-cause finding in either document.
-
-### Was anyone malicious?
-
-Assessed in the layers the casebook uses (see [Terminology](../docs/terminology.md)). **This is the only entry where the answer is yes**, and it is worth being precise about which layer carries it.
-
-- **Designers' intent subverted:** yes. Model refusals existed and were circumvented by a false claim of authorization.
-- **The actor's own goal:** compromise of another state's systems, and extraction of personnel data. Both accounts agree on the objective.
-- **Recognition that the action was unauthorized:** yes at the human layer — the authorization framing is itself evidence that someone knew authorization was required and did not have it.
-- **Harm intended:** yes. This distinguishes the entry from every other case here.
-- **Intent of the humans who deployed it:** malicious, on both accounts. The disagreement is about how much the humans did, not about what they wanted.
-
-**The layer that carries the finding is the human one**, and that is the point worth taking from this entry: **malice entered through the operator, not through the model.** The same framework, pointed at a consenting client, would be a penetration test. This is why the casebook's inclusion test turns on autonomy rather than intent — intent tells you about the people, and it is the same answer whether the agents were autonomous or not.
 
 ## Security recommendations
 
@@ -189,6 +185,7 @@ All dates 2026.
 
 Newest first.
 
+- **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
 - **v0.1 (September 22, 2026):** first draft, from the discoverer's analysis of the attacker's recovered workspace and the victim government's Mandarin press release, both read in full and in the original, plus the later national policy that never mentions the attack. Carried at **Disputed** tier because the two first-hand accounts differ on the deciding question — how autonomous the attack was — and neither addresses the other.
 
 ---

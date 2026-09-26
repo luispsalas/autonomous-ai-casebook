@@ -35,9 +35,9 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 **Used for:** two distinct things, which entries keep apart.
 
 - **Malicious as a technical label** for an artifact or action built to subvert a system: a malicious package, a malicious dataset. This usage describes the thing, not a state of mind, and sources use it that way.
-- **Maliciousness as an assessed property of an incident**: whether anyone, human or model, intended harm. This is a finding, and entries state it rather than implying it.
+- **Maliciousness as a property of the people or models involved**: whether anyone intended harm. The casebook **does not assess this itself.** Entries report what the sources explicitly state about intent, attributed, under **Reported intent**.
 
-**How an entry assesses it:** separately from the question of whether a system was hacked, and in these layers — the designers' intent that the behavior subverted; the actor's own goal as its reasoning shows it; whether the actor recognized the action as unauthorized; whether harm was intended; and the intent of any human who deployed it. Deliberate misuse and an accident can produce the same incident, and the casebook's inclusion test deliberately does not care which. Its readers do.
+**Why it is reported, not assessed:** intent is hard to establish from outside, and a verdict on it is a claim about someone's state of mind that the casebook cannot check. So entries quote the operator, the victim and the investigators on intent, and say so when none of them addresses it. Deliberate misuse and an accident can produce the same incident, and the casebook's inclusion test deliberately does not care which. Its readers do, which is why the statements are gathered in one place.
 
 **Related and not the same:** a **hack**, in the sense the security field uses after Bruce Schneier, is something a system permits but its designers neither anticipated nor wanted — it follows the rules while subverting the goal. A hack needs no malice at all.
 
@@ -83,7 +83,7 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 
 **Why it matters here.** Several incidents run through a **third-party evaluation partner** whose misconfiguration is the proximate cause while the operator ran the model; one runs through a **government institute** that was operator, victim-side responder and investigator at once; and in others the party that bore the cost — a volunteer moderator, two open-source maintainers — has no relationship with anyone involved. Each of those is a liability-shaped question, and each is recorded as an **open question** rather than answered. Entries also name real organizations, which is the second reason the line is drawn here: an unadjudicated claim that a named party is liable is not a finding, it is an accusation.
 
-**Related and not the same:** [maliciousness](#malicious-maliciousness) is also a finding about people, and the casebook *does* assess it — from the record, in stated layers. The difference is the forum: maliciousness can be read from what the actors did and said; liability requires someone with authority to decide it, and nobody has.
+**Related and not the same:** [maliciousness](#malicious-maliciousness) is also a question about people, and the casebook handles it the same way: it reports what sources have stated about intent and draws no conclusion of its own.
 
 ## Other words entries watch
 

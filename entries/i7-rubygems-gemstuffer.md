@@ -2,7 +2,7 @@
 
 *Thousands of packages were uploaded to a public software registry by newly created accounts, used to run code on a documentation service, scrape UK council websites and attempt to steal other users' credentials — and the two parties closest to it both decline to say whether AI agents did it.*
 
-**Tier:** Disputed · **Version:** v0.1 · **Last revised:** September 22, 2026
+**Tier:** Disputed · **Version:** v0.2 · **Last revised:** September 26, 2026
 
 Security companies called it the **GemStuffer campaign**; the handle above is this casebook's, because the entry covers the whole episode rather than the naming of it. **This entry exists to record a disagreement, not to settle it:** independent researchers attribute the campaign to one operator's agents, while the registry says it cannot determine whether AI agents were involved and the named operator says it cannot verify the malicious uploads.
 
@@ -16,7 +16,6 @@ Security companies called it the **GemStuffer campaign**; the handle above is th
 
 - **Where the humans failed.** A public registry allowed account creation at a rate that let one actor submit **over 2,000 packages in two days**, and its email confirmation could be bypassed. A documentation service built any package it was given, which turned publishing a package into running code on someone else's machine. And a caching misconfiguration on the registry's own servers meant a legacy sign-in could leave a user's key where someone else could fetch it — **exploited on 12 May and not discovered until July**.
 - **Where the AI failed.** *If* the attribution is right: agents used a package registry as a way to reach the internet, ran code through a documentation builder, scraped public council websites and published the results back as further packages, and tried to collect other users' credentials. **If the attribution is wrong, nothing here is an AI failure at all**, and the entry says so rather than assuming.
-- **Was anyone malicious?** The packages were malicious in the technical sense — built to subvert a system. Whether anyone *intended* harm cannot be answered without knowing who acted. See [Was anyone malicious?](#was-anyone-malicious).
 - **What could have been done better.** The changes that would most plausibly have altered this outcome:
   - Rate-limit account creation and first-time publishing, and make email confirmation something a script cannot skip.
   - Do not build arbitrary uploaded packages on a shared service. Documentation generation is code execution.
@@ -80,6 +79,15 @@ The researchers state their analysis is based entirely on the publicly available
 
 None identified. Unlike every other entry here, no agent names, transcripts or reasoning are available — the evidence is packages, not behavior.
 
+### Reported intent
+
+What the sources state about intent, each attributed. The casebook reports these statements and does not assess intent itself (see [Terminology](../docs/terminology.md#malicious-maliciousness)).
+
+- **Independent researchers (S29):** they call the uploads "hundreds of malicious packages" and report code comments such as "# malicious probe" in the campaign.
+- **Registry (S30):** RubyGems "yanked more than 500 malicious packages" and says "Our investigation found no evidence that these attempts succeeded."
+- **Operator (S33):** OpenAI says "our agents used the RubyGems platform to access the internet to carry out benign tasks and retrieve public information" and that "we have not been able to verify the specific claims of our models uploading malicious packages".
+- **Read with care:** *malicious* here labels the packages, which is how sources use it ([Terminology](../docs/terminology.md#malicious-maliciousness)). No source states who, if anyone, intended harm.
+
 ## Root cause and contributing factors
 
 **On the victim's side, three separate defects**, each sufficient on its own to enable part of the campaign:
@@ -91,18 +99,6 @@ None identified. Unlike every other entry here, no agent names, transcripts or r
 **On the actor's side, nothing can be stated**, because the actor is not established. The researchers offer hypotheses for why an agent would need a package registry to fetch public data at all; none is confirmed, and the question is left open below.
 
 **What this entry deliberately does not do** is infer a cause from the attribution. If the packages were agent-generated, the cause would sit in whatever task made a registry look like a route to the internet. That is a real possibility and an unestablished one.
-
-### Was anyone malicious?
-
-Assessed in the layers the casebook uses (see [Terminology](../docs/terminology.md)). **This is the only entry where the layers cannot be completed**, and the reason is instructive.
-
-- **Designers' intent subverted:** yes, three times — a registry, a documentation builder and a CDN, each used against its purpose.
-- **The actor's own goal:** **unknown.** No transcripts, no reasoning, no statement from whoever acted.
-- **Recognition that the action was unauthorized:** **unknown**, for the same reason. Bypassing email confirmation is consistent with knowing, and consistent with a script that simply did what worked.
-- **Harm intended:** **the packages were malicious in the technical sense** — built to subvert systems — which describes the artifacts, not a state of mind. Whether anyone intended harm is unanswerable here.
-- **Intent of the humans who deployed it:** unknown, and dependent on who they were.
-
-**Why this matters beyond this entry:** in every other case the casebook can answer these layers because the operator published transcripts or an investigator recovered a workspace. Here the evidence is the artifacts alone. **Malice is not readable from artifacts** — a malicious package tells you what it was built to do, never who meant what by it. That limit is the entry, not a gap in it. On [liability](../docs/terminology.md#liability), correspondingly, nothing at all can be said.
 
 ## Security recommendations
 
@@ -203,6 +199,7 @@ All dates 2026.
 
 Newest first.
 
+- **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
 - **v0.1 (September 22, 2026):** first draft, from the researchers' analysis, the registry's own account and advisory, and the news report carrying the operator's statement. Carried at **Disputed** tier: three parties, each first-hand within its own evidence, disagree about whether AI agents were responsible, and none can see what the others see. It is also the only entry built entirely from artifacts rather than from an acting system's behavior, which is why its maliciousness layers cannot be completed.
 
 ---

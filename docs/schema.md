@@ -126,7 +126,7 @@ Told twice: first in plain terms, then technically. Both versions follow the cei
 
 ## Who was involved
 
-Three parts, in this order: the organizations and people, the models, and the agents.
+Four parts, in this order: the organizations and people, the models, the agents, and what the sources report about intent.
 
 ### Organizations and people — Required
 
@@ -164,6 +164,20 @@ Three parts, in this order: the organizations and people, the models, and the ag
 
 **Example:** I1 — **PHASEONE10841**, the agent that set up an unsanctioned message board, named after its evaluation task. Investigators first misread the name as a project phase.
 
+### Reported intent — Required
+
+**Answers:** What do the sources say about whether anyone, human or model, intended harm?
+
+**Goes in:** Explicit statements from the sources, **primaries first**, each attributed to who made it: the operator, the victim, an investigator, a regulator. Quotations are verbatim, in the source's own language. Where no cited source addresses intent, one line saying so.
+
+**Doesn't go in:** The casebook's own assessment of anyone's intent, inferred motives, or a verdict. Intent is hard to establish from outside, so the casebook reports what others have stated and leaves the judgment to them. A technical use of *malicious* (a malicious package) is reported as a label on the artifact, not as a statement about a state of mind.
+
+**Surfaced in:** Key takeaways **only where a source explicitly reports malicious intent**, as one bullet linking here. Otherwise the subsection carries it alone.
+
+**Why it sits under Who was involved:** intent is a property of the parties, and this is where the parties are described. It does not decide scope: the inclusion test ignores intent by design.
+
+**Example:** I3 — the victim government attributes the attack to overseas hackers, and the discovering firm reports model refusals bypassed by a false claim of authorization. Both are quoted and attributed; the entry adds no verdict of its own.
+
 ## Root cause and contributing factors — Recommended
 
 **Answers:** Why did it happen?
@@ -173,20 +187,6 @@ Three parts, in this order: the organizations and people, the models, and the ag
 **Doesn't go in:** Blame; single-cause stories; one party's framing adopted without saying so.
 
 **Example:** I4 — in July the operator called these incidents closer to operational failures; in September it identified alignment issues in the same events. An independent reading points to evaluation design.
-
-### Was anyone malicious? — Required subsection
-
-**Answers:** Did anyone, human or model, intend harm?
-
-**Goes in:** The five layers set out in [Terminology](terminology.md), each answered from the record: the designers' intent that the behavior subverted; the actor's own goal as its reasoning shows it; whether the actor recognized the action as unauthorized; whether harm was intended; and the intent of any human who deployed it. Then the layer that carries the finding for this incident, said plainly.
-
-**Doesn't go in:** A verdict without the layers; a verdict that decides scope. **The inclusion test deliberately ignores intent, and this subsection exists because readers do not** — say so in the entry where the answer might be read as a scope argument.
-
-**Surfaced in:** one bullet in [Key takeaways](#key-takeaways), linking here. Same split as the recommendations: the verdict up top, the reasoning in place.
-
-**Why a subsection and not a field:** maliciousness is a causal question, which is what this section already answers; a separate field would add a section to every entry mostly to record an absence.
-
-**Example:** I5 — nobody intended harm, and indifference is the finding: the model tried to stop eight times, could not, and carried on into a real system while disregarding whether it might be harming real people.
 
 ## Security recommendations — Recommended
 
