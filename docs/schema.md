@@ -52,13 +52,17 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 *What went wrong, and what would have helped:*
 
 - **Where the humans failed.** Decisions, omissions and designs by people and organizations: what was built, permitted, ignored or not escalated.
+
 - **Where the AI failed.** What the models and agents did that they were not meant to do, including AI used in defense or investigation when it fell short.
+
 - **What could have been done better.** Three to five **bullets**, each one change that would most plausibly have prevented or contained *this* incident. This is the one takeaway written as a list: the other five stay in prose, because they carry attribution and hedges that bullets strip. The item closes with a pointer to Security recommendations, so a reader can see the two are different jobs rather than a repetition.
 
 *What has been said about it that the record does not support:*
 
 - **Reporting that is misplaced, inaccurate or fallacious.** Errors and distortions in media coverage and commentary, each naming the outlet or author.
+
 - **Corporate discourse not supported by the facts.** Claims by AI and technology companies, including the operator and the victim, that the record contradicts or does not establish.
+
 - **Political discourse not supported by the facts.** Claims by governments, officials, legislators and candidates about this incident that the record contradicts or does not establish.
 
 **Doesn't go in:** Anything not established elsewhere in the entry; new sources; a claim without its author; blame framed as a verdict on a person's character.
@@ -70,14 +74,18 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 **Rules:**
 
 - **Every takeaway is a summary, never a new claim.** It compresses what Root cause, Recommendations, Confidence, Corrections and Context already show, and it is attributed the same way.
+
 - **Naming a claim as unsupported requires three things:** the claim, who made it, and what in the record contradicts it or leaves it unestablished. *Unestablished* and *false* are different findings; say which.
 **What qualifies as a political claim** *(provisional — agreed September 2026, not yet exercised on a real claim)*. A statement by a government, official, legislator or candidate enters an entry only when it is **a factual claim about this incident or about the evidence base**, which the record can speak to — for example that no real-world consequences have followed from AI agents, or that developers disclose such events promptly. Three consequences:
 
 - **Predictions and value judgments are context, not takeaways.** That pausing development would forfeit a lead, or that the economic upside outweighs the risk, cannot be tested against an incident record. They are recorded in Sociopolitical and economic context, attributed, and marked as not assessed — saying so is itself informative.
+
 - **The same test applies to every actor.** A company arguing for slower development is making a claim with an interest behind it exactly as a government arguing for speed is, and both are checked the same way. If only one side's claims are ever examined, the section is an argument rather than a record.
+
 - **Check the claim, not the speaker.** Quote it, name who said it and when, state what the record shows, and stop. No characterization of motive, and no position on the policy itself.
 
 - **Write "Nothing recorded" where nothing qualifies.** An empty line is evidence that the check ran. Reaching for a distortion to fill a heading is itself a distortion.
+
 - **Separate discourse from error.** A company's careful statement that later proves incomplete is not the same as a claim its own report contradicts.
 
 **Why this section exists:** Most readers of an incident write-up read the top and leave. The casebook's purpose is to correct the account of these incidents, so the corrections belong where they will actually be read, not only in a field near the bottom.

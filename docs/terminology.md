@@ -35,6 +35,7 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 **Used for:** two distinct things, which entries keep apart.
 
 - **Malicious as a technical label** for an artifact or action built to subvert a system: a malicious package, a malicious dataset. This usage describes the thing, not a state of mind, and sources use it that way.
+
 - **Maliciousness as a property of the people or models involved**: whether anyone intended harm. The casebook **does not assess this itself.** Entries report what the sources explicitly state about intent, attributed, under **Reported intent**.
 
 **Why it is reported, not assessed:** intent is hard to establish from outside, and a verdict on it is a claim about someone's state of mind that the casebook cannot check. So entries quote the operator, the victim and the investigators on intent, and say so when none of them addresses it. Deliberate misuse and an accident can produce the same incident, and the casebook's inclusion test deliberately does not care which. Its readers do, which is why the statements are gathered in one place.

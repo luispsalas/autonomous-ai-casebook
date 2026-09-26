@@ -65,12 +65,19 @@ No list of AI incidents is complete, this one included. **If an incident isn't h
 Every entry follows the same structure, so incidents can be compared field by field:
 
 - **Key takeaways:** where the humans failed, where the AI failed, what would have helped, and which claims about the incident — in reporting, from companies, from politicians — the record doesn't support
+
 - **Briefing:** a short name, a one-line description, a summary you can read in under a minute, the key events and how long the incident went unnoticed
+
 - **What happened:** told once in plain terms and once technically
+
 - **Who was involved:** the organizations, models and agents, and what the sources report about anyone's intent
+
 - **Analysis:** causes from more than one perspective, whether anyone intended harm, recommendations, and governance
+
 - **Confidence and corrections:** what the claims rest on, and what the sources got wrong
+
 - **Context and open questions**
+
 - **Reference:** the full timeline, tags, sources and version history
 
 **Tiers:** *Full* entries rest on at least one primary source; *Provisional* entries rely on secondary sources for now and say so; *Disputed* entries are ones where the people closest to the incident give first-hand accounts that contradict each other about whether the AI acted on its own, and the entry sets those accounts side by side rather than choosing between them.

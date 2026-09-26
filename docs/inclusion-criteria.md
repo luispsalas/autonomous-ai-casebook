@@ -9,10 +9,15 @@ The casebook covers one phenomenon: **an AI system acting with meaningful autono
 An incident qualifies when all four hold:
 
 1. **An AI system was involved.**
+
 2. **The AI's autonomy was central to the harm.** This is the deciding test. Either:
+
    - **(a)** the AI took the consequential action itself, or
+
    - **(b)** the harm came about *through* the AI's autonomous behavior, even though a human started it.
+
 3. **The consequence was security-relevant** and reached something real.
+
 4. **Evidence exists** at the level the tier requires (below).
 
 ### Autonomy decides; intent doesn't
@@ -46,7 +51,9 @@ Full and Provisional grade the **evidence**; Adjacent and Out of scope record th
 **What the tier requires, so that it cannot become a place to put uncertainty:**
 
 - **A first-hand source on each side.** A discoverer, a victim, an operator, an evaluator — someone with direct knowledge, not a commentator. Where only one side has one, the case is Provisional or Adjacent instead.
+
 - **The disagreement must be about the test**, not about details. Two sources differing on a date or a count is an ordinary correction.
+
 - **The entry does not adjudicate.** It states each account, attributes it, explains what each party could and could not see, and names what would resolve it. The casebook's own reading, where it has one, is labeled as its own.
 
 **This tier is about the sources' disagreement, never the casebook's own uncertainty.** If nobody is contradicting anybody and the casebook simply cannot tell, that is Provisional evidence or a failed test, and saying so is the honest answer.

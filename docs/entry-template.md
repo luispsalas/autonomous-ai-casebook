@@ -1,6 +1,8 @@
 <!--
 Copy this file to entries/i<N>-<slug>.md and fill in every Required field.
 Sections follow docs/schema.md, in the same order. Remove the guidance comments before publishing.
+Leave a blank line between list items, including nested ones: GitHub gives no other way to space
+long bullets for reading, and the pre-push check flags adjacent items.
 -->
 
 # I<N> · <Short handle>
@@ -20,9 +22,13 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 **What went wrong, and what would have helped**
 
 - **Where the humans failed:**
+
 - **Where the AI failed:**
+
 - **What could have been done better:** <3–5 bullets, one change each, each able to stand alone>
+
   - 
+
   - 
 
 *These are the changes that would most plausibly have altered this incident. The generalized controls, addressed to whoever owns each exposure, are in [Security recommendations](#security-recommendations).*
@@ -30,7 +36,9 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 **What has been said that the record does not support**
 
 - **Reporting that is misplaced, inaccurate or fallacious:**
+
 - **Corporate discourse not supported by the facts:**
+
 - **Political discourse not supported by the facts:**
 
 ## Briefing
@@ -38,6 +46,7 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
 <!-- Required. Short bullets, under a minute to read: what happened, who, scale, why it matters. No caveats (they go in Confidence). -->
 
 - **What happened:**
+
 - **Why it matters:**
 
 **Key events** (the full record is in the [Timeline](#timeline)):
@@ -80,6 +89,7 @@ Sections follow docs/schema.md, in the same order. Remove the guidance comments 
      explicitly reports malicious intent. -->
 
 - **<Party> (S#):**
+
 - **Not reported:** 
 
 ## Root cause and contributing factors

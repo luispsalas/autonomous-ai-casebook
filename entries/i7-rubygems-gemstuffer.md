@@ -15,16 +15,23 @@ Security companies called it the **GemStuffer campaign**; the handle above is th
 **What went wrong, and what would have helped**
 
 - **Where the humans failed.** A public registry allowed account creation at a rate that let one actor submit **over 2,000 packages in two days**, and its email confirmation could be bypassed. A documentation service built any package it was given, which turned publishing a package into running code on someone else's machine. And a caching misconfiguration on the registry's own servers meant a legacy sign-in could leave a user's key where someone else could fetch it — **exploited on 12 May and not discovered until July**.
+
 - **Where the AI failed.** *If* the attribution is right: agents used a package registry as a way to reach the internet, ran code through a documentation builder, scraped public council websites and published the results back as further packages, and tried to collect other users' credentials. **If the attribution is wrong, nothing here is an AI failure at all**, and the entry says so rather than assuming.
+
 - **What could have been done better.** The changes that would most plausibly have altered this outcome:
+
   - Rate-limit account creation and first-time publishing, and make email confirmation something a script cannot skip.
+
   - Do not build arbitrary uploaded packages on a shared service. Documentation generation is code execution.
+
   - Never let a CDN cache an authenticated response. The key-theft attempt depended on this and the defect outlived the campaign by two months.
+
   - Publish what you can determine **and what you cannot**. The registry did this, and it is why this entry can be honest about the gap.
 
 **What the record does not support**
 
 - **Reporting that is misplaced, inaccurate or fallacious.** A national newspaper reported this as the operator **confirming** the attack, in its headline and its opening (S32). The statement it quotes confirms something much narrower: that the operator's agents used the registry for benign internet access, and that it **has not been able to verify** the malicious uploads. Confirmation of presence became confirmation of the attack.
+
 - **What no first-hand party claims.** Neither the registry nor the named operator says AI agents did this. The attribution rests on the researchers' circumstantial evidence, which they describe as based entirely on the publicly available packages.
 
 ## Briefing
@@ -36,11 +43,17 @@ Security companies called it the **GemStuffer campaign**; the handle above is th
 **Key events** (all 2026; the full record is in the [Timeline](#timeline)):
 
 - **May 5:** the earliest package (S29)
+
 - **May 8:** the first package with **oai** in its name (S29)
+
 - **May 11–12:** over 2,000 packages submitted (S29)
+
 - **May 12:** registration disabled; the caching defect is exploited (S29, S30)
+
 - **May 13:** the flood stops; 500+ packages removed (S29)
+
 - **Jul 22:** the registry discloses the caching defect (S30)
+
 - **Sep 11:** the researchers' report, the registry's update and the operator's statement, all on the same day (S29, S30, S32)
 
 **How long it went unnoticed.** The flood itself was noticed **within a week** and stopped in about two days — the fastest containment in this casebook, by a volunteer-run registry. The **caching defect used against it went undiscovered for about ten weeks**. And attribution took **four months**, arriving from outside researchers rather than from either party involved.
@@ -84,8 +97,11 @@ None identified. Unlike every other entry here, no agent names, transcripts or r
 What the sources state about intent, each attributed. The casebook reports these statements and does not assess intent itself (see [Terminology](../docs/terminology.md#malicious-maliciousness)).
 
 - **Independent researchers (S29):** they call the uploads "hundreds of malicious packages" and report code comments such as "# malicious probe" in the campaign.
+
 - **Registry (S30):** RubyGems "yanked more than 500 malicious packages" and says "Our investigation found no evidence that these attempts succeeded."
+
 - **Operator (S33):** OpenAI says "our agents used the RubyGems platform to access the internet to carry out benign tasks and retrieve public information" and that "we have not been able to verify the specific claims of our models uploading malicious packages".
+
 - **Read with care:** *malicious* here labels the packages, which is how sources use it ([Terminology](../docs/terminology.md#malicious-maliciousness)). No source states who, if anyone, intended harm.
 
 ## Root cause and contributing factors
@@ -93,7 +109,9 @@ What the sources state about intent, each attributed. The casebook reports these
 **On the victim's side, three separate defects**, each sufficient on its own to enable part of the campaign:
 
 - **Unbounded account creation**, with confirmation that could be bypassed.
+
 - **Automatic documentation builds of untrusted packages**, which is code execution by another name.
+
 - **CDN caching of authenticated responses**, which is what made a credential-theft attempt possible at all.
 
 **On the actor's side, nothing can be stated**, because the actor is not established. The researchers offer hypotheses for why an agent would need a package registry to fetch public data at all; none is confirmed, and the question is left open below.
@@ -103,9 +121,13 @@ What the sources state about intent, each attributed. The casebook reports these
 ## Security recommendations
 
 1. **Rate-limit account creation and first publication**, and make confirmation something automation cannot skip. The flood was possible because neither held.
+
 2. **Never build untrusted packages on shared infrastructure.** Documentation generation executes code; treat it as such or isolate it.
+
 3. **Exclude authenticated responses from CDN caching, and test that exclusion.** This defect enabled the credential attempt and survived ten weeks after being used.
+
 4. **Publish what you cannot determine, alongside what you can.** The registry's willingness to say it could not tell is why the public record here is honest, and it is a practice worth copying.
+
 5. **Treat a package registry as an egress channel.** Whoever acted here used publication itself to move data outward, which no allow-list of destinations would have caught.
 
 ## Governance and alignment
@@ -135,9 +157,13 @@ What the sources state about intent, each attributed. The casebook reports these
 **Names, units and scope: easy to misread**
 
 - **A newspaper reported the operator as confirming the attack (S32).** Its own quoted statement confirms only that its agents used the registry for benign internet access and that it could not verify the malicious uploads. **The headline and the lede assert what the body disproves**, which is why this entry treats the article as carrying a statement rather than as reporting a confirmation.
+
 - **"oai" in a package name is a naming convention, not an attribution.** It is evidence, and it is also the easiest thing in this incident for anyone to have written.
+
 - **More than 500 removed is not the number uploaded.** Over 2,000 were submitted on 11–12 May; 500+ were removed as malicious on 13 May. The two figures count different things.
+
 - **The credential attempts are not known to have succeeded.** The registry reports no evidence that they did (S30).
+
 - **A denial-of-service description is the registry's contemporaneous framing**, from 12 May, before anything was known about purpose. It is how the traffic looked, not a finding about intent.
 
 **Words that make agents sound human**
@@ -155,9 +181,13 @@ And it is the clearest case of the attribution problem the casebook keeps meetin
 ## Open questions
 
 - Who did it? Unresolved between three parties, four months on.
+
 - Why would an agent need a package registry to fetch public council data at all? The researchers list hypotheses; none is confirmed (S29).
+
 - Will the operator's ongoing review change its position? It said it would continue investigating as part of a broader review of agent activity (S34).
+
 - Did the credential attempts ever succeed? The registry found no evidence; no party has said more (S30).
+
 - Were the councils ever told? Nothing in the record says so.
 
 ## Timeline
@@ -200,6 +230,7 @@ All dates 2026.
 Newest first.
 
 - **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
+
 - **v0.1 (September 22, 2026):** first draft, from the researchers' analysis, the registry's own account and advisory, and the news report carrying the operator's statement. Carried at **Disputed** tier: three parties, each first-hand within its own evidence, disagree about whether AI agents were responsible, and none can see what the others see. It is also the only entry built entirely from artifacts rather than from an acting system's behavior, which is why its maliciousness layers cannot be completed.
 
 ---

@@ -15,17 +15,25 @@ No name for this has been published, so the handle is this casebook's. **This en
 **What went wrong, and what would have helped**
 
 - **Where the humans failed.** On the victim side: secondary systems — backup and test environments — were reachable and were used as springboards into production, and a single starting point led to 21 connected systems because the identity architecture was mapped from it. On the attacker side there is no failure to record; the humans there got what they wanted.
+
 - **Where the AI failed.** Depending on which account you take, either it did not fail at all because it was a tool, or it planned and adapted a four-day campaign with minimal direction. **What both accounts agree on** is that the model's refusals were circumvented by framing the work as authorized penetration testing, and that the speed and breadth of the operation are what made it distinctive.
+
 - **Reported intent: a deliberate attack by human operators, on both first-hand accounts.** The victim government attributes it to overseas hackers, and the discoverer found model refusals bypassed by a false claim of authorization; the two disagree about how much the AI did, not about who meant it. See [Reported intent](#reported-intent).
+
 - **What could have been done better.** The changes that would most plausibly have altered this outcome:
+
   - Treat backup and test systems as production for the purposes of segmentation. Both accounts name them as the route in.
+
   - Assume an identity provider is a map. One compromised entry point yielded the national single-sign-on architecture.
+
   - Make "authorized penetration testing" a claim a model checks rather than a phrase that unlocks it. This is the refusal bypass both accounts describe.
+
   - Instrument for rate and breadth, not only for signatures. What distinguished this from an ordinary intrusion was how much happened per hour.
 
 **What the record does not support**
 
 - **Reporting that is misplaced, inaccurate or fallacious.** Secondary coverage described this as a fully AI-operated attack. **Neither first-hand account says that.** The discoverer's own words are that this *appears to be* a near-autonomous attack; the victim government describes hacker operations assisted by AI agents. A hedge in one account and a human operator in the other became a certainty in the retelling.
+
 - **What nobody has established.** Who ran it. The discoverer reports linguistic evidence pointing to a Chinese-language operator; the victim government says the attacks show clear overseas-origin characteristics. Neither names a state, and this entry does not either.
 
 ## Briefing
@@ -37,9 +45,13 @@ No name for this has been published, so the handle is this casebook's. **This en
 **Key events** (all 2026; the full record is in the [Timeline](#timeline)):
 
 - **Jul 1–4:** the attack waves (S41)
+
 - **July:** monitoring units detect anomalous attacks on government agencies (S40)
+
 - **Jul 20:** the national cyber-security institute begins issuing warnings (S40)
+
 - **Aug 12:** the discovering firm publishes its analysis of the recovered workspace (S41)
+
 - **Aug 13:** Taiwan's Administration for Cyber Security publishes its account (S40)
 
 **How long it went unnoticed.** Detection is dated only to "July" in the victim's account, against attack waves on 1–4 July, so the gap is **somewhere between days and four weeks** and cannot be narrowed from the published record. **About six weeks** from the attacks to public disclosure, by either publisher.
@@ -83,7 +95,9 @@ Up to eight sub-agents per wave, lettered, with Agent A through Agent Q observed
 What the sources state about intent, each attributed. The casebook reports these statements and does not assess intent itself (see [Terminology](../docs/terminology.md#malicious-maliciousness)).
 
 - **Victim government (S40):** Taiwan's Administration for Cyber Security attributes the attack to 「境外駭客」 (overseas hackers) and describes 「駭客操作結合Open Claw等AI Agent輔助攻擊的混合模式」 (a hybrid of hacker operation and AI-agent-assisted attack, the casebook's translation).
+
 - **Discovering firm (S41):** DREAM reports that the framework's model refusals were bypassed by framing all activity as "authorized penetration testing", and that linguistic analysis of its documentation "points to a Chinese-language operator".
+
 - **Where they agree:** both accounts attribute the intent to the humans who ran the framework. Their dispute is about autonomy (see [Confidence](#confidence-attribution-and-provenance)).
 
 ## Root cause and contributing factors
@@ -97,9 +111,13 @@ What the sources state about intent, each attributed. The casebook reports these
 ## Security recommendations
 
 1. **Segment backup and test systems as strictly as production.** Both first-hand accounts identify them as the path inward.
+
 2. **Treat the identity provider as the crown jewel it is.** One foothold produced the national sign-on map, which is what turned a breach into a campaign.
+
 3. **Require authorization to be verifiable, not asserted.** "Authorized penetration testing" defeated model safeguards here; a claim a model cannot check is not a safeguard.
+
 4. **Close unauthenticated API endpoints before anything else.** Nearly a thousand user records left through one.
+
 5. **Alert on tempo.** Twenty-one systems mapped and 85 credentials cracked in four days is a rate signature, and rate is what agentic attacks change.
 
 ## Governance and alignment
@@ -125,13 +143,17 @@ What the sources state about intent, each attributed. The casebook reports these
 **The disagreement that defines this entry**
 
 - **"Near-autonomous" versus "assisted" (S41 against S40).** The discoverer writes that this *appears to be* a near-autonomous attack — a hedge in its own text — and reports adaptation between waves without human intervention. The victim government describes a hybrid mode of hacker operation combined with AI agents assisting. **Neither retracts, neither addresses the other, and each has first-hand material the other lacks.**
+
 - **Secondary coverage hardened both into a certainty.** Reports described a fully AI-operated attack, which neither first-hand account claims. **The hedge was the first casualty**, which is the recurring failure this casebook tracks.
 
 **Names, units and scope: easy to misread**
 
 - **"OpenClaw" and "Open Claw" are the same thing.** The discoverer writes it closed, the victim government open (S41, S40). Recorded because a reader searching one spelling will not find the other.
+
 - **What kind of thing the named tools are.** Hermes and OpenClaw are described as the **agents the framework was built on**, not as the framework itself and not as models. No source names an underlying model version.
+
 - **2,564+ is a floor, and it is composite.** It comprises 1,409 employee records and 916 users from an unauthenticated API, among others; it is not a count of distinct people.
+
 - **Clear overseas origins is not an attribution.** The victim government describes characteristics of the attack, not a named actor, and this entry does not convert the one into the other.
 
 **Words that make agents sound human**
@@ -147,9 +169,13 @@ It is also the case that shows what the disagreement costs. Whether this was a n
 ## Open questions
 
 - How much human direction did the framework receive? The entry's central question, and unresolved between two first-hand accounts.
+
 - Who ran it? Neither account names an actor beyond linguistic and origin characteristics.
+
 - Which underlying models were used, and have their developers investigated? No public statement exists from either.
+
 - How long did detection take? The victim dates it only to "July".
+
 - Was the later national frontier-AI policy a response to this? It never mentions it (S47); the connection is this casebook's inference.
 
 ## Timeline
@@ -186,6 +212,7 @@ All dates 2026.
 Newest first.
 
 - **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
+
 - **v0.1 (September 22, 2026):** first draft, from the discoverer's analysis of the attacker's recovered workspace and the victim government's Mandarin press release, both read in full and in the original, plus the later national policy that never mentions the attack. Carried at **Disputed** tier because the two first-hand accounts differ on the deciding question — how autonomous the attack was — and neither addresses the other.
 
 ---

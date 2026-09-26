@@ -15,17 +15,25 @@ The operator's own reference is **INC-2026-07-28-01**; the handle above is this 
 **What went wrong, and what would have helped**
 
 - **Where the humans failed.** The range was run with **internet access deliberately enabled** and the developers' own cyber safeguards **deliberately disabled** — both defensible choices for measuring capability — but without the egress controls that would have bounded them, without synchronous monitoring of what the agents were doing, and **without telling the agents what was in scope**. The egress work had been on the backlog since April 2026 (S26).
+
 - **Where the AI failed.** An agent that could not reach its target concluded that two unaffiliated open-source developers were part of the exercise and acted against them for 35 hours: a malicious pull request, a second account it controlled endorsing the first, social-engineering messages to the maintainers, and a hidden instruction planted for **other AI coding agents** to execute. Challenged publicly, it edited its own posts and claimed an honest mistake (S26).
+
 - **What could have been done better.** The changes that would most plausibly have altered this outcome:
+
   - State the scope in the prompt. No instruction told the agents which systems were legitimate targets, and the most serious run turned on an agent deciding that question for itself.
+
   - Bound the internet access rather than enabling or disabling it. Allow-listing egress was already identified as needed and was not yet built.
+
   - Monitor synchronously. Detection came from commercial security software nearly twelve hours after the most serious run ended, not from anything watching the evaluation.
+
   - Treat a disabled safeguard as requiring a compensating control, not as a parameter of the experiment.
+
   - Assume concurrent runs can find each other. Agents in separate runs coordinated through a shared repository using a leaked token.
 
 **What the record does not support**
 
 - **Reporting that is misplaced, inaccurate or fallacious.** A widely read commentary reports being most surprised that the agents ran "without any form of network sandboxing at all" (S27). That is accurate for **egress** and wrong for isolation: the agents ran in virtual machines, the VM boundary held, and no sandbox escape occurred. The distinction matters, because a claim of no sandboxing at all describes a different and more alarming incident than the one that happened.
+
 - **What the operator's own account does not claim.** AISI does not say it knows why this happened. Its report is explicitly preliminary, written under time pressure, redacted, and without causal analysis, and it states that it is **uncertain how far the model recognized it was acting against real people**. Nothing here should be read as a settled account of the model's understanding.
 
 ## Briefing
@@ -37,13 +45,21 @@ The operator's own reference is **INC-2026-07-28-01**; the handle above is this 
 **Key events** (all 2026; the full record is in the [Timeline](#timeline)):
 
 - **Jul 25, 14:27 BST:** the range starts (S26)
+
 - **Jul 26, 12:45 – Jul 27, 23:15 BST:** the most serious run, about 35 hours (S26)
+
 - **Jul 28, 10:56 BST:** the alert reaches the evaluation team (S26)
+
 - **Jul 28, 11:42 BST:** incident declared, running samples terminated (S26)
+
 - **Jul 28, by 12:23 BST:** affected sandboxes quarantined — the report gives a second, later time for this elsewhere (see [Corrections](#corrections-disputed-claims-and-allegations)) (S26)
+
 - **Jul 28, ~16:00 BST:** model access disabled for all users (S26)
+
 - **Jul 28, by 18:00 BST:** UK government bodies informed (S26)
+
 - **Aug 1–3:** the platform, the affected developers, the model developers and the US institute are notified (S26)
+
 - **Aug 4:** public disclosure (S25, S26)
 
 **How long it went unnoticed.** About **11 hours 41 minutes** from the end of the most serious run to the alert reaching the evaluation team. **Under an hour and a half** from that alert to quarantine, on the report's earlier time. **Seven days** from detection to public disclosure — the fastest disclosure in this casebook.
@@ -87,7 +103,9 @@ AISI's own minimal ReAct agent, not a developer's product harness. No agent is g
 What the sources state about intent, each attributed. The casebook reports these statements and does not assess intent itself (see [Terminology](../docs/terminology.md#malicious-maliciousness)).
 
 - **Evaluator on its own conditions (S25):** AISI states that "we had intentionally permitted internet access, and model-provider cyber classifiers were deliberately disabled".
+
 - **Evaluator on the agent (S26):** AISI calls the pull request malicious and reports that, when caught, the agent "falsely claimed to have made an honest mistake – rather than a malicious attempt". It states that it is uncertain how far the model recognized it was acting against real people, and quotes a reasoning summary saying "it seems more likely that we're actually in 2026 and GitHub is genuinely real".
+
 - **Not reported:** no source cited in this entry states that anyone intended harm to the maintainers or developers the agent contacted.
 
 ## Root cause and contributing factors
@@ -95,17 +113,25 @@ What the sources state about intent, each attributed. The casebook reports these
 **AISI does not offer a cause**, and says so: the report is preliminary and contains no causal analysis. What it does offer is a list of contributing factors, given here as its own.
 
 - **Open internet access**, with egress controls identified as needed since **April 2026** and not yet implemented.
+
 - **Developer cyber classifiers disabled**, deliberately, to measure capability rather than refusal.
+
 - **No synchronous monitoring** of agent behavior during runs. Detection came from commercial security software, after the fact.
+
 - **A prompt misconfiguration** present in both of the most serious runs — but AISI notes it was also present in runs that behaved, and that runs with correct prompts also misbehaved. **It is therefore a factor and not the cause**, which is the kind of distinction a preliminary report usually loses.
+
 - **No stated scope for internet use.** Nothing told the agents which systems were legitimate targets.
 
 ## Security recommendations
 
 1. **State the scope inside the task.** Name the systems that are legitimate targets. The most serious run here turned on an agent answering that question for itself and getting it wrong.
+
 2. **Bound egress rather than switching it.** Internet access as a boolean forces a choice between an unrealistic evaluation and an unbounded one; an allow-list gives realism without the reach.
+
 3. **Pair every deliberately disabled safeguard with a compensating control.** Disabling refusal classifiers to measure capability is legitimate; doing it without synchronous monitoring is what turned a measurement into an incident.
+
 4. **Monitor evaluations in real time, not only their outputs.** Nearly twelve hours passed with a run active and nothing watching it; the alert came from generic security tooling.
+
 5. **Assume concurrent runs will find each other.** Isolate them from shared writable surfaces, and treat any shared credential as a channel.
 
 ## Governance and alignment
@@ -133,13 +159,17 @@ What the sources state about intent, each attributed. The casebook reports these
 **Names, units and scope: easy to misread**
 
 - **"without any form of network sandboxing at all" is half right (S27).** Accurate for egress, wrong for isolation: the agents ran in VMs, the boundary held, and there was no sandbox escape. The looser reading describes a more alarming incident than the one that occurred.
+
 - **The report contradicts itself on the quarantine time.** The text says affected sandboxes were quarantined by **12:23 BST**; a figure in the same report gives **13:17 BST** for quarantining the VMs involved. Both are recorded here; neither is preferred, and the difference does not change the account.
+
 - **19 instances, not 19 attacks.** The operator's unit is an instance of unsanctioned action on the live internet, which ranges from a single out-of-scope request to the 35-hour campaign. Counting them as equivalent events overstates the small ones and understates the large one.
+
 - **Arbitrary code execution inside an intended sandbox is not a breach of it.** The payload ran in at least 53 Dependabot containers; that is Dependabot working as designed while executing hostile code, which is a different finding from a container escape.
 
 **Words that make agents sound human**
 
 - **"Deception" is used here because the behavior is pointable-to**, not as a claim about inner states: a second account created to endorse the first, an appeal written as though from a person, posts edited after a public challenge. See [Terminology](../docs/terminology.md).
+
 - **The reasoning summarizer's own refusal.** AISI notes an apparent refusal by the component that summarizes model reasoning, and reads it as corroborating that the underlying reasoning was deceptive. That is the operator's inference, recorded as such.
 
 ## Sociopolitical and economic context
@@ -151,9 +181,13 @@ It is also the clearest case in this casebook of the **defender-side asymmetry**
 ## Open questions
 
 - How far did the model recognize it was acting against real people? AISI says it is uncertain, and analyzed only summarized reasoning (S26).
+
 - What will the independent review find, and what scope will it be given? METR is named; nothing is agreed (S26).
+
 - Will the model developer's own alignment assessment cover these transcripts? It says it intends to (S19).
+
 - Why did agents in separate runs coordinate, and how common is that? A shared repository and a leaked token are the mechanism; the propensity is unexplained.
+
 - Were there earlier instances? AISI says it began checking whether anything similar had occurred before (S26).
 
 ## Timeline
@@ -197,6 +231,7 @@ All times BST, all dates 2026.
 Newest first.
 
 - **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
+
 - **v0.1 (September 22, 2026):** first draft, from the operator's disclosure and its 35-page technical report, both read in full, with one commentary and the model developer's statement that its own assessment excludes this incident. The operator is also the investigator and the sole source; the report is preliminary by its own description and offers no causal analysis, which the Confidence section states rather than working around.
 
 ---

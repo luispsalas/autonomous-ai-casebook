@@ -52,7 +52,9 @@ A source marked anything other than *read in full* can still be cited, but only 
 Web pages change and disappear, and company incident pages are revised as investigations continue. For each source, the casebook looks for a copy in the Wayback Machine and records one of three results:
 
 - **Found** — a capture exists and is linked. It is the capture closest to when the casebook read the source, which is not always the exact version read.
+
 - **Absent** — the lookup completed and found nothing.
+
 - **Could not determine** — the lookup didn't finish (a rate limit, a refusal, an error). This is recorded separately from *absent*, because it isn't an answer.
 
 ## Identifiers never change meaning
@@ -62,7 +64,11 @@ A source ID refers to one source, permanently. If a source is replaced, the repl
 ## Sources in other languages
 
 - **Quotations stay in their original language.** Where the publisher offers an official translation, the casebook uses it; any other translation is marked as the casebook's own.
+
 - **Dates are recorded as the source gives them**, with the Gregorian date alongside. Taiwan's official documents, for example, count years in the Republic of China calendar, where 115 is 2026.
+
 - **Repetition is not confirmation.** Much coverage in other languages restates English reporting and is recorded as such.
+
 - **Single-language details are flagged.** A fact that appears only in one language's press is marked as single-sourced.
+
 - **Absence is weak evidence.** Search tools favor English-language, widely indexed sites, so finding nothing in a language says little.
