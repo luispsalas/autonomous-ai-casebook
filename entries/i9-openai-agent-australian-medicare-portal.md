@@ -1,8 +1,8 @@
-# I9 · The Medicare Statistics Portal Intrusion
+# I9 · The Australian Medicare Statistics Portal Intrusion
 
 *An OpenAI model doing internet research on Australian medicine spending was refused by a government statistics portal, found a way around the refusal and reached files it was not meant to see — and the government heard about it three months later, in an email to a public mailbox.*
 
-**Tier:** Full · **Version:** v0.1 · **Last revised:** September 26, 2026
+**Tier:** Full · **Version:** v0.2 · **Last revised:** September 26, 2026
 
 The handle is this casebook's. The portal belongs to Services Australia and publishes aggregate statistics; it is **not** the Medicare claims or payments system, and no individual's data is reported to have been involved (S114). The agents appear to belong to the same web-research population as [I2](i2-openai-agents-wiki-board.md), on independent researchers' evidence (S113); the operator has not said so.
 
@@ -257,6 +257,8 @@ government-target · Australia · web-research-task · block-circumvention · fi
 ## Version history
 
 Newest first.
+
+- **v0.2 (September 26, 2026):** handle renamed to *The Australian Medicare Statistics Portal Intrusion*, so the country is clear from the title alone.
 
 - **v0.1 (September 26, 2026):** first draft, from the Australian government's two press-conference transcripts, independent researchers' report, the operator's statement as quoted and its running page, and news reports.
 
