@@ -137,10 +137,11 @@ long bullets for reading, and the pre-push check flags adjacent items.
 
 ## Sources
 
-<!-- Generated from the source registry. Factual columns only. -->
+<!-- Generated from the source registry by the maintainer's source-table script, which rewrites everything
+     between these two markers from the IDs the entry cites. Keep both markers exactly as written. -->
 
-| ID | Title | Outlet / creator | Format | Type | Link | Archived copy | Archive check | Accessed | Published | Read status |
-|---|---|---|---|---|---|---|---|---|---|---|
+<!-- SOURCES:START — generated from the source registry; do not edit by hand -->
+<!-- SOURCES:END -->
 
 ## Version history
 
