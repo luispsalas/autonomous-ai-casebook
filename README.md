@@ -1,7 +1,7 @@
 <p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-    <img src="assets/banner-light.svg" alt="Autonomous AI Casebook: Security incidents where AI acted on its own" width="760">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark-left.svg">
+    <img src="assets/banner-light-left.svg" alt="Autonomous AI Casebook: Security incidents where AI acted on its own" width="760">
   </picture>
 </p>
 
