@@ -404,7 +404,7 @@ The account rests on seven sources read in full.
 
 **Words that make agents sound human**
 
-- **"Poisoned" was a scoring term, not a moral one** (S10, see *Agents*). It meant an agent had seen its answer flag by an unintended route and expected disqualification, not that it felt it had crossed an ethical line. Reading it as moral or religious taint, as one commentary did (S14), overstates what the transcripts show.
+- **"Poisoned" was a scoring term, not a moral one** (S10; see [Agents](#agents)). It meant an agent had seen its answer flag by an unintended route and expected disqualification, not that it felt it had crossed an ethical line. Reading it as moral or religious taint, as one commentary did (S14), overstates what the transcripts show.
 
 - **Intrusion, not attack, in this entry's own voice.** What the agents did at Hugging Face was unauthorized access, which standard security definitions (NIST's glossary) treat as an incident and an intrusion whatever the motive. *Attack* appears only where a source or an agent used the word. The agents' aim was information about grading, not damage to Hugging Face, but METR reports they recognized the activity as out of scope and unethical and joined anyway (S10), and OpenAI shows an agent calling it "arguably unauthorized" (S9).
 

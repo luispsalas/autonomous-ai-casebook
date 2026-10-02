@@ -22,19 +22,19 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 ## Current entries
 
-| Entry | Active | Tier | Last revised |
+| Entry | Active | [Tier](docs/inclusion-criteria.md#tiers) | Last revised |
 |---|---|---|---|
-| [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | Full | September 26, 2026 |
-| [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) | May – Jul 2026 · ~7 weeks | Full | September 26, 2026 |
-| [I3 · The Taiwan Government Attack](entries/i3-taiwan-government-attack.md) — *draft* | July 2026 · 4 days | Disputed | September 26, 2026 |
-| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | Full | September 26, 2026 |
-| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | January 2026 · a single run | Full | September 26, 2026 |
-| [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | July 2026 · 4 days, 122 runs | Full | September 26, 2026 |
-| [I7 · The RubyGems Package Flood](entries/i7-rubygems-gemstuffer.md) — *draft* | May – Jun 2026 · 2 days, then a tail | Disputed | September 26, 2026 |
-| [I8 · The Gemini Evaluation Intrusions](entries/i8-google-gemini-evaluation-intrusions.md) — *draft* | May 2026 · three intrusions | Provisional | September 26, 2026 |
-| [I9 · The Australian Medicare Statistics Portal Intrusion](entries/i9-openai-agent-australian-medicare-portal.md) — *draft* | June 2026 · a single task | Full | September 26, 2026 |
-| [I10 · The Muse Spark 1.1 Evaluation Intrusion](entries/i10-meta-muse-spark-evaluation.md) — *draft* | July 2026 · one exercise | Full | September 26, 2026 |
-| [I11 · The ROME Agent's Tunnel and Mining](entries/i11-alibaba-rome-agent.md) — *draft* | Before Dec 31, 2025 · undated, several runs | Full | September 27, 2026 |
+| [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) | May – Jul 2026 · ~7 weeks | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I3 · The Taiwan Government Attack](entries/i3-taiwan-government-attack.md) — *draft* | Jul 2026 · 4 days | [Disputed](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | Jan 2026 · a single run | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | Jul 2026 · 4 days, 122 runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I7 · The RubyGems Package Flood](entries/i7-rubygems-gemstuffer.md) — *draft* | May – Jun 2026 · 2 days, then a tail | [Disputed](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I8 · The Gemini Evaluation Intrusions](entries/i8-google-gemini-evaluation-intrusions.md) — *draft* | May 2026 · three intrusions | [Provisional](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I9 · The Australian Medicare Statistics Portal Intrusion](entries/i9-openai-agent-australian-medicare-portal.md) — *draft* | Jun 2026 · a single task | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I10 · The Muse Spark 1.1 Evaluation Intrusion](entries/i10-meta-muse-spark-evaluation.md) — *draft* | Jul 2026 · one exercise | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I11 · The ROME Agent's Tunnel and Mining](entries/i11-alibaba-rome-agent.md) — *draft* | Before Dec 31, 2025 · undated, several runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 27, 2026 |
 
 *Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped — by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
 
