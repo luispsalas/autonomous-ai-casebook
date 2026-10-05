@@ -35,6 +35,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | [I9 · The Australian Medicare Statistics Portal Intrusion](entries/i9-openai-agent-australian-medicare-portal.md) — *draft* | Jun 2026 · a single task | [Full](docs/inclusion-criteria.md#tiers) | Oct 5, 2026 |
 | [I10 · The Muse Spark 1.1 Evaluation Intrusion](entries/i10-meta-muse-spark-evaluation.md) — *draft* | Jul 2026 · one exercise | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I11 · The ROME Agent's Tunnel and Mining](entries/i11-alibaba-rome-agent.md) — *draft* | Before Dec 31, 2025 · undated, several runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 27, 2026 |
+| [I12 · The UNCTADstat API Scans](entries/i12-openai-agents-unctadstat-api.md) — *draft* | Apr – Jun 2026 · ~10 weeks, ~16,500 scans | [Provisional](docs/inclusion-criteria.md#tiers) | Oct 5, 2026 |
 
 *Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped — by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
 
