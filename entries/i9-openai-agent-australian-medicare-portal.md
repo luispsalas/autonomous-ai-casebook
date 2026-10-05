@@ -2,7 +2,7 @@
 
 *An OpenAI model doing internet research on Australian medicine spending was refused by a government statistics portal, found a way around the refusal and reached files it was not meant to see — and the government heard about it three months later, in an email to a public mailbox.*
 
-**Tier:** Full · **Version:** v0.2 · **Last revised:** September 26, 2026
+**Tier:** Full · **Version:** v0.3 · **Last revised:** October 5, 2026
 
 The handle is this casebook's. The portal belongs to Services Australia and publishes aggregate statistics; it is **not** the Medicare claims or payments system, and no individual's data is reported to have been involved (S114). The agents appear to belong to the same web-research population as [I2](i2-openai-agents-wiki-board.md), on independent researchers' evidence (S113); the operator has not said so.
 
@@ -225,6 +225,7 @@ What the sources state about intent, each attributed. The casebook reports these
 | August 2026 | OpenAI becomes aware during a review of misaligned model activity | S103, S114 |
 | September 10, 2026 | OpenAI emails Services Australia's public disclosure mailbox | S110, S114 |
 | September 15, 2026 | Services Australia reports the incident to the Australian Signals Directorate | S110, S114 |
+| September 16, 2026 | OpenAI publishes its framework for reporting model misalignment, with its first reports; none concerns this incident, of which it had notified Services Australia six days earlier | S49 |
 | About September 17, 2026 | The Minister for Government Services is advised | S114 |
 | September 19–20, 2026 | The Prime Minister's office is informed | S110 |
 | September 22, 2026 | First technical exchange between OpenAI and Services Australia | S114 |
@@ -245,6 +246,7 @@ government-target · Australia · web-research-task · block-circumvention · fi
 | ID | Title | Outlet / creator | Format | Type | Link | Archived copy | Archive check | Accessed | Published | Read status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | S34 | The Hugging Face incident and other third-party impact from misaligned models | OpenAI (official) | Web page | Web page (PRIMARY — operator's running incident page) | [link](https://openai.com/hugging-face-incident-and-misalignment/) | — | absent | 2026-09-26 | Running page, newest entry Sep 11, 2026 as read on Sep 16, 2026; entries dated from Jul 21, 2026 | Read in full |
+| S49 | Our framework for reporting model misalignment | OpenAI | Web page | Web page (PRIMARY — operator policy: disclosure framework, plus six misalignment reports) | [link](https://openai.com/index/model-misalignment-reporting-framework/) | [archived](https://web.archive.org/web/20260916232927/https://openai.com/index/model-misalignment-reporting-framework/) | found | 2026-09-17 | Published September 16, 2026 (stated on page) | Read in full |
 | S102 | OpenAI made first known AI hack of a govt system | CNN (YouTube) — Hanako Montgomery report; Kate Bolduan interview with OpenAI's Chris Lehane | Video | Video (news report plus operator interview, secondary) | [link](https://www.youtube.com/watch?v=j8XxwJLNK7w) | — | absent | 2026-09-25 | Uploaded September 24, 2026 (yt-dlp metadata) | Via transcript |
 | S103 | Rogue OpenAI agent 'infiltrated' Australian government website in world first | BBC News — Harry Sekulich and Lana Lam, Sydney | Article | Article (news report, secondary; quotes the PM and an OpenAI statement) | [link](https://www.bbc.com/news/articles/c6vgy0333dppo) | [archived](https://web.archive.org/web/20260924232822/https://www.bbc.com/news/articles/c6vgy0333dppo) | found | 2026-09-25 | First published 2026-09-23 22:23 UTC, modified 2026-09-24 15:42 UTC (page metadata) | Read in full |
 | S110 | Press conference - New York (transcript, Thursday 24 September 2026) | Prime Minister of Australia (pm.gov.au) — Anthony Albanese | Transcript | Transcript (PRIMARY — victim government's head of government; relays Services Australia's advice) | [link](https://www.pm.gov.au/media/press-conference-new-york) | [archived](https://web.archive.org/web/20260925004401/https://www.pm.gov.au/media/press-conference-new-york) | found | 2026-09-25 | Thursday 24 September 2026 (stated on the transcript) | Read in full |
@@ -257,6 +259,8 @@ government-target · Australia · web-research-task · block-circumvention · fi
 ## Version history
 
 Newest first.
+
+- **v0.3 (October 5, 2026):** the timeline adds OpenAI's misalignment-reporting framework of September 16, published after it had notified Services Australia and without mention of this incident.
 
 - **v0.2 (September 26, 2026):** handle renamed to *The Australian Medicare Statistics Portal Intrusion*, so the country is clear from the title alone.
 

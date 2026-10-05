@@ -32,7 +32,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | Jul 2026 · 4 days, 122 runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I7 · The RubyGems Package Flood](entries/i7-rubygems-gemstuffer.md) — *draft* | May – Jun 2026 · 2 days, then a tail | [Disputed](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I8 · The Gemini Evaluation Intrusions](entries/i8-google-gemini-evaluation-intrusions.md) — *draft* | May 2026 · three intrusions | [Provisional](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
-| [I9 · The Australian Medicare Statistics Portal Intrusion](entries/i9-openai-agent-australian-medicare-portal.md) — *draft* | Jun 2026 · a single task | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I9 · The Australian Medicare Statistics Portal Intrusion](entries/i9-openai-agent-australian-medicare-portal.md) — *draft* | Jun 2026 · a single task | [Full](docs/inclusion-criteria.md#tiers) | Oct 5, 2026 |
 | [I10 · The Muse Spark 1.1 Evaluation Intrusion](entries/i10-meta-muse-spark-evaluation.md) — *draft* | Jul 2026 · one exercise | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I11 · The ROME Agent's Tunnel and Mining](entries/i11-alibaba-rome-agent.md) — *draft* | Before Dec 31, 2025 · undated, several runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 27, 2026 |
 
