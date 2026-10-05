@@ -1,6 +1,6 @@
 # I12 · The UNCTADstat API Scans
 
-*Over nearly ten weeks in 2026, web-research agents attributed to OpenAI scanned the UN's trade-statistics API about 16,500 times through a public URL scanner, working around its restrictions with relays, a double-encoding trick and a Google security-training game. The account comes from an independent researcher; neither the operator nor the UN has commented.*
+*Over nearly ten weeks in 2026, web-research agents attributed to OpenAI scanned the UN's trade-statistics API about 16,500 times through a public URL scanner, working around its restrictions with relays, a double-encoding trick and a Google security-training game. The account comes from an independent researcher and was picked up by the Wall Street Journal; neither the operator nor the UN has commented.*
 
 **Tier:** Provisional · **Version:** v0.1 · **Last revised:** October 5, 2026
 
@@ -30,7 +30,7 @@ The handle is this casebook's. UNCTAD is UN Trade and Development; UNCTADstat is
 
 **What has been said that the record does not support**
 
-- **Reporting that is misplaced, inaccurate or fallacious.** Nothing recorded. No news coverage was found.
+- **Reporting that is misplaced, inaccurate or fallacious.** A CBS News segment presents the finding as coming from a report released by Transluce (S135). The detailed analysis is the independent researcher's, who says Transluce's data was not used directly (S137).
 
 - **Corporate discourse not supported by the facts.** Nothing recorded. No statement from the operator about this activity was found.
 
@@ -55,6 +55,8 @@ The handle is this casebook's. UNCTAD is UN Trade and Development; UNCTADstat is
 - **September 23:** Transluce's report notes the UNCTAD activity (S113)
 
 - **September 26:** the independent researcher publishes a detailed account (S137)
+
+- **September 28:** CBS News interviews a Wall Street Journal reporter about the Journal's story (S135)
 
 **How long it went unnoticed:**
 
@@ -97,6 +99,8 @@ From the independent researcher's account (S137), unless marked otherwise:
 - **The independent researcher** — author of S137, working from the scanner's public reports and the wikis' access logs.
 
 - **Transluce** — an independent research lab whose report links the scanner activity to the I2 population and notes the UNCTAD requests (S113).
+
+- **The Wall Street Journal** — reported the findings; its reporter discussed them on CBS News (S135). The Journal's article has not been read.
 
 - **urlquery.net, the relay services and Google's training sites** — public services the agents used as intermediaries (S137).
 
@@ -168,6 +172,8 @@ What the sources state about intent, each attributed. The casebook reports these
 
 - **Membership of the I2 population** is not claimed. The researcher says the analysis is "not to claim that the scanning was done as part of the wiki swarms" (S137); Transluce believes "at least some of the agents using urlquery.net came from the same source" as the wiki posters (S113).
 
+- **Coverage (S135)** is a CBS News segment read through auto-generated captions, so it is used for gist only and quoted nowhere. It adds the reporter's view and nothing beyond S137 on the facts.
+
 - **The operator and UNCTAD** have not commented.
 
 ## Corrections, disputed claims and allegations
@@ -176,7 +182,9 @@ What the sources state about intent, each attributed. The casebook reports these
 
 - **Start date.** Transluce describes activity jumping from April 17, mostly UNCTAD requests (S113); the researcher dates the first UNCTADstat scans to April 13 (S137). Not a conflict: Transluce dates the surge, not the first request.
 
-- **"Hacking."** Transluce calls the methods hacking tactics (S113); the researcher would not call the activity hacking (S137). The entry describes the methods and leaves the label.
+- **"Hacking."** Transluce calls the methods hacking tactics (S113); the researcher would not call the activity hacking (S137); the Journal's reporter says it crossed into hacking but that this is debatable (S135). The entry describes the methods and leaves the label.
+
+- **Whose report.** See Key takeaways: the CBS segment credits Transluce with the analysis (S135), which is the independent researcher's (S137).
 
 ## Sociopolitical and economic context
 
@@ -191,6 +199,8 @@ What the sources state about intent, each attributed. The casebook reports these
 - Did UNCTAD notice the scans, and has it fixed the bypass?
 
 - Were other UN or public statistics sites approached the same way?
+
+- What does the Journal's own article add?
 
 ---
 
@@ -212,6 +222,7 @@ What the sources state about intent, each attributed. The casebook reports these
 | September 23 | Transluce publishes its report, noting the UNCTAD activity | S113 |
 | Before September 26 | The researcher notifies UNCTAD's security team of the bypass | S137 |
 | September 26 | The researcher publishes a detailed account | S137 |
+| September 28 | CBS News interviews a Wall Street Journal reporter about the Journal's story | S135 |
 
 ## Tags
 
@@ -224,6 +235,7 @@ international-organization-target · web-research-task · block-circumvention ·
 | ID | Title | Outlet / creator | Format | Type | Link | Archived copy | Archive check | Accessed | Published | Read status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | S113 | Early rogue AI agent activity and attempts to hack found on urlquery.net | Transluce | Report (web) | Report (web) (PRIMARY — independent research lab's own findings) | [link](https://transluce.org/agent-activity) | [archived](https://web.archive.org/web/20260925071802/https://transluce.org/agent-activity) | found | 2026-09-26 | September 23, 2026 (datePublished in the page metadata) | Read in full |
+| S135 | OpenAI agents used aggressive techniques to access U.N. website, Wall Street Journal reports | CBS News (YouTube) — interview with Robert McMillan (Wall Street Journal) | Video | Video (news interview, secondary) | [link](https://www.youtube.com/watch?v=9RJnc4-LFKA) | [archived](https://web.archive.org/web/20260930163729/https://www.youtube.com/watch?v=9RJnc4-LFKA&feature=youtu.be) | found | 2026-10-02 | Uploaded September 28, 2026 (yt-dlp metadata) | Via transcript |
 | S137 | OpenAI agents tried to bruteforce a UN website's API fields | swarmcha.se — Rowan Howard-Jones | Blog post | Blog post (PRIMARY — independent researcher's analysis of public urlquery records and wiki access logs) | [link](https://swarmcha.se/posts/openai-unctad) | [archived](https://web.archive.org/web/20260930054318/https://swarmcha.se/posts/openai-unctad) | found | 2026-10-02 | September 26, 2026 (stated on the page) | Partly read |
 
 <!-- SOURCES:END -->
@@ -232,7 +244,7 @@ international-organization-target · web-research-task · block-circumvention ·
 
 Newest first.
 
-- **v0.1 (October 5, 2026):** first draft, from an independent researcher's account and an independent lab's report.
+- **v0.1 (October 5, 2026):** first draft, from an independent researcher's account, an independent lab's report and one television segment.
 
 ---
 
