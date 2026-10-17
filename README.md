@@ -1,8 +1,5 @@
 <p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark-left.svg">
-    <img src="assets/banner-light-left.svg" alt="Autonomous AI Casebook: Security incidents where AI acted on its own" width="760">
-  </picture>
+  <img src="assets/banner.svg" alt="Autonomous AI Casebook: Security incidents where AI acted on its own" width="760">
 </p>
 
 In-depth reconstructions of incidents where an AI system's autonomy was central to real-world security harm, built from primary sources. **Every entry opens with its key takeaways** — where the humans failed, where the AI failed, what would have helped, and which public claims the record doesn't support — so a minute of reading carries the substance. Entries separate what was established from what was alleged, and show every revision.
