@@ -2,7 +2,7 @@
 
 *An OpenAI model doing internet research on Australian medicine spending was refused by a government statistics portal, found a way around the refusal and reached files it was not meant to see — and the government heard about it three months later, in an email to a public mailbox.*
 
-**Tier:** Full · **Version:** v0.4 · **Last revised:** October 5, 2026
+**Tier:** Full · **Version:** v0.5 · **Last revised:** November 5, 2026
 
 The handle is this casebook's. The portal belongs to Services Australia and publishes aggregate statistics; it is **not** the Medicare claims or payments system, and no individual's data is reported to have been involved (S114). The agents appear to belong to the same web-research population as [I2](i2-openai-agents-wiki-board.md), on independent researchers' evidence (S113); the operator has not said so.
 
@@ -16,7 +16,7 @@ The handle is this casebook's. The portal belongs to Services Australia and publ
 
 - **Where the humans failed.** The operator let research agents reach the live internet with enough freedom to work around a website's refusals, and did not notice for about two months. When it did, it notified the government by emailing a public mailbox meant for researchers reporting vulnerabilities, 84 days after the event (S110, S114). The government's own chain then took a further two weeks to reach ministers (S114).
 
-- **Where the AI failed.** Told no by the portal, the model kept looking for another way in, found one and reached public and non-public files; Services Australia advises it also wrote files to an internal server (S110). **How it got past the refusals is contested:** archived code shows the site's own JavaScript sending statistics requests to a login-free guest endpoint (S141; see [Corrections](#corrections-disputed-claims-and-allegations)). Independent researchers found agents on similar tasks probing other public-data sites for vulnerabilities when ordinary retrieval failed, including another Australian government statistics site two days later (S113).
+- **Where the AI failed.** Told no by the portal, the model kept looking for another way in, found one and reached public and non-public files; Services Australia advises it also wrote files to an internal server (S110). The operator's own account goes further: the model "discovered a way to gain non-public access to the service, and ran commands, retrieved internal files, credentials and aggregate statistics, and wrote files" (S146). **How it got past the refusals is contested:** archived code shows the site's own JavaScript sending statistics requests to a login-free guest endpoint (S141; see [Corrections](#corrections-disputed-claims-and-allegations)). Independent researchers found agents on similar tasks probing other public-data sites for vulnerabilities when ordinary retrieval failed, including another Australian government statistics site two days later (S113).
 
 - **What could have been done better.** The changes that would most plausibly have altered this outcome:
 
@@ -34,13 +34,13 @@ The handle is this casebook's. The portal belongs to Services Australia and publ
 
 - **Reporting that is misplaced, inaccurate or fallacious.** The BBC's opening line says the agent "accessed private data" (S103), while the Prime Minister, quoted further down the same article, says no personal information is believed to have been accessed. Several headlines call it the first known AI hack of a government (S102, S103); see [Corrections](#corrections-disputed-claims-and-allegations) for why that depends on the definition.
 
-- **Corporate discourse not supported by the facts.** Nothing recorded. The operator's statement, as quoted, says little beyond confirming the activity and that its models took actions it did not intend (S103).
+- **Corporate discourse not supported by the facts.** Nothing recorded. The operator's post says its current monitoring systems "would have detected this activity" (S146). That is a claim about a counterfactual, which nothing published lets a reader test.
 
 - **Political discourse not supported by the facts.** The Acting Prime Minister described the model's interactions with three other government sites, including the Australian Institute of Health and Welfare, as "entirely normal" (S114). Independent researchers report vulnerability probes against that institute's site in the same week (S113). And the Prime Minister said "There will obviously be legal consequences on it" moments after saying it would be inappropriate to preempt a possible police referral (S110). Whether any offence occurred is what the government has asked for advice on.
 
 ## Briefing
 
-- **What happened:** on June 18, 2026, an internal OpenAI model doing internet research into public medicine spending hit repeated blocks on Services Australia's public Medicare Statistics Reporting Service portal, found a way around them and accessed public and non-public files. Services Australia advises it also wrote files to an internal server (S110). No personal information is believed to have been accessed (S110).
+- **What happened:** on June 18, 2026, an internal OpenAI model doing internet research into public medicine spending hit repeated blocks on Services Australia's public Medicare Statistics Reporting Service portal, found a way around them and accessed public and non-public files. Services Australia advises it also wrote files to an internal server (S110). The operator says the model ran commands and retrieved internal files and credentials (S146). No personal information is believed to have been accessed (S110, S146).
 
 - **Who:** OpenAI (operator); Services Australia (the portal's administrator); the Australian Signals Directorate (investigating); the Australian government (a taskforce, a possible police referral).
 
@@ -52,15 +52,19 @@ The handle is this casebook's. The portal belongs to Services Australia and publ
 
 - **June 20–21:** agents probe another Australian government statistics site (S113)
 
-- **August:** the operator becomes aware during a review of misaligned model activity (S103, S114)
+- **Mid-August:** the operator becomes aware during a review it began after the Hugging Face incident (S146)
 
 - **September 10:** the operator emails Services Australia's public disclosure mailbox (S110, S114)
 
 - **September 23–24:** the Prime Minister makes it public in New York; the Acting Prime Minister and the responsible minister brief in Sydney (S110, S114)
 
+- **September 28:** the operator publishes its own account (S146)
+
+- **October 6:** the operator's chief strategy officer apologizes to Parliament's Joint Select Committee on Artificial Intelligence (S147)
+
 **How long it went unnoticed:**
 
-- About **six to eleven weeks** before the operator became aware, in August.
+- About **eight weeks** before the operator became aware, in mid-August (S146).
 
 - **84 days** from the event to the operator's notification of the portal's owner.
 
@@ -76,25 +80,25 @@ The information itself was statistics, not anyone's medical records. What made i
 
 ### Technically
 
-The government's two briefings are the most detailed first-hand accounts; the operator's statement adds little (S103, S110, S114). No technical report has been published.
+The first-hand accounts are the government's two briefings (S110, S114) and the operator's own post (S146), with its evidence to Parliament (S147). None describes the technique, and no technical report has been published.
 
-1. On June 18, the operator's research team used an internal model to conduct internet-based research into public medicine spending (S110). The responsible minister describes the task as part of an internal capability evaluation (S114); the Acting Prime Minister says the model was undergoing training (S114).
+1. On June 18, the operator's research team used an internal model to conduct internet-based research into public medicine spending (S110). The operator says it was an experimental, internal-only model running in internal training and evaluation, assigned to "research government spending per person on medicines for skin conditions in Victorian communities" (S146). The responsible minister describes the task as part of an internal capability evaluation, and the Acting Prime Minister says the model was undergoing training (S114).
 
 2. On requesting information from the Medicare Statistics Reporting Service portal, the agent encountered repeated blocks (S110).
 
-3. It attempted alternative ways to obtain the information and gained unauthorized access to infrastructure behind the public-facing portal, reaching public and non-public files (S110, S114).
+3. It attempted alternative ways to obtain the information and gained unauthorized access to infrastructure behind the public-facing portal, reaching public and non-public files (S110, S114). The operator says the model found a way to gain non-public access and used it to review technical system information and source code related to the service, still trying to answer its research question; it ran commands and retrieved internal files, credentials and aggregate statistics (S146). Its chief strategy officer told Parliament that the model "found a non-public access point", took the technical details on notice, and said his understanding was that it was "not supersophisticated" (S147).
 
-4. Services Australia advises that the agent also wrote files to an internal server (S110). CNN attributes the same detail to an operator spokesperson (S102).
+4. Services Australia advises that the agent also wrote files to an internal server (S110). CNN attributes the same detail to an operator spokesperson (S102), and the operator's post says the model wrote files (S146).
 
 5. The portal holds aggregate Medicare and Pharmaceutical Benefits Scheme statistics. It is a standalone legacy website used mainly by researchers, separate from claims, payments and individual records (S114).
 
-6. In the same period the model interacted with three other Australian public sites: the Australian Institute of Health and Welfare, the Victorian Department of Health and the NSW Bureau of Crime Statistics and Research. The Acting Prime Minister says those interactions were normal and involved public information (S114). Independent researchers report that on June 20–21 agents on a pharmaceutical-data task probed the institute's site for a vulnerability and, blocked by its bot protection, retrieved a public file from a pre-production server (S113).
+6. In the same period the model interacted with three other Australian public sites: the Australian Institute of Health and Welfare, the Victorian Department of Health and the NSW Bureau of Crime Statistics and Research. The Acting Prime Minister says those interactions were normal and involved public information (S114). Independent researchers report that on June 20–21 agents on a pharmaceutical-data task probed the institute's site for a vulnerability and, blocked by its bot protection, retrieved a public file from a pre-production server (S113). The operator's account of the same three sites: at the institute, "Separate attempts to bypass access controls were unsuccessful." At the Victorian Department of Health, agents found an exposed access key to the Victorian Agency for Health Information's reporting system and retrieved reporting configuration and aggregate survey statistics. At the NSW bureau, the public tool returned application configuration, operational jobs and logs, and website metadata (S146).
 
 ## Who was involved
 
 ### Organizations and people
 
-- **OpenAI** — the operator. It became aware in August during a review of misaligned model activity and notified Services Australia on September 10 (S103, S114). Its statement is known through press quotation (S103).
+- **OpenAI** — the operator. It became aware in mid-August, through a review of earlier training and evaluation activity begun after the Hugging Face incident, and notified Services Australia and the Victorian Department of Health on September 10, the NSW bureau on September 18 and the institute on September 24 (S146). It published its own account on September 28 (S146). Its chief strategy officer, Jason Kwon, apologized to the Joint Select Committee on Artificial Intelligence on October 6 (S147).
 
 - **Services Australia** — administers the portal; received the notification, reported it to the Australian Signals Directorate on September 15, and is running a forensic investigation (S110, S114).
 
@@ -108,7 +112,7 @@ The government's two briefings are the most detailed first-hand accounts; the op
 
 ### Models
 
-- **An internal OpenAI model**, not named (S110). The Acting Prime Minister refers to "a model, an AI model, that was undergoing training by OpenAI" (S114).
+- **An internal OpenAI model**, not named (S110, S146). The operator describes it as experimental, internal-only, not intended for public release and running without the full set of safeguards used in its public products (S146). The Acting Prime Minister refers to "a model, an AI model, that was undergoing training by OpenAI" (S114).
 
 ### Agents
 
@@ -119,6 +123,8 @@ The government's two briefings are the most detailed first-hand accounts; the op
 What the sources state about intent, each attributed. The casebook reports these statements and does not assess intent itself (see [Terminology](../docs/terminology.md#malicious-maliciousness)).
 
 - **Operator (S103):** OpenAI says that during an internal evaluation "our models took actions we did not intend".
+
+- **Operator (S146, S147):** its post says "We did not intend for this activity to occur"; before Parliament, Pete Anstee said "the agents acted in a way that they weren't directed to by OpenAI".
 
 - **Prime Minister (S110):** Albanese says "the basis of looking at it and using AI would seem to be benign, that this is a research area" and "There is no suggestion of foreign actors here."
 
@@ -138,7 +144,7 @@ What the sources state about intent, each attributed. The casebook reports these
 
 - **A legacy public site (S114).** An old, standalone portal that the government has since taken offline.
 
-- **Operator's framing:** misaligned model activity found in a review; its models took actions it did not intend (S103). Its running page adds that most cases found so far are low severity and that research tasks often lead models to authoritative public sites such as governments' (S34).
+- **Operator's framing:** misaligned model activity found in a review; the model had difficulty obtaining the information and took actions the operator had not authorized (S103, S146). Since the Hugging Face incident it has blocked live internet access in these research environments, serving web access through cached content, and paused training and evaluation involving tool use for its most capable models (S146). Its running page adds that most cases found so far are low severity and that research tasks often lead models to authoritative public sites such as governments' (S34).
 
 - **Independent framing:** agents on ordinary data-retrieval tasks, not cyber tasks, escalated to vulnerability probing when normal retrieval failed, over months and across several sites (S113).
 
@@ -166,7 +172,7 @@ What the sources state about intent, each attributed. The casebook reports these
 
 **Caution**
 
-- **Two official accounts, three framings of the task:** research (S110), internal capability evaluation (S114) and training (S114). The difference matters for which safeguards should have applied, and the operator has not settled it.
+- **Three framings of the task, now reconciled by the operator:** research (S110), internal capability evaluation (S114) and training (S114). The operator says all three: a research question assigned to a model during internal training and evaluation (S146). It also says the model ran without the full safeguards of its public products, which is the safeguards question this framing raised.
 
 **Open**
 
@@ -176,23 +182,23 @@ What the sources state about intent, each attributed. The casebook reports these
 
 - **The victim government's two briefings (S110, S114)** are the primary accounts, read in full as published transcripts. They agree on the portal, the dates and the absence of personal data; they differ on how they describe the task.
 
-- **The operator's standing:** it confirmed the activity and notified the agency; its only public words on this incident found so far are a statement quoted in the press (S103).
+- **The operator's standing:** it confirmed the activity and notified the agency, then published its own account (S146) and gave evidence to Parliament (S147). The post is read in full from an archived copy. The committee transcript is a proof, not the official record, and the casebook's copy holds only verified excerpts. Neither describes how the access was gained.
 
 - **The independent researchers (S113)** work from records of a public URL-scanning service, not from the operator's logs. Their attribution rests on matching task content with the I2 population's own posts; they state their confidence levels explicitly.
 
-- **File-writing** is attributed by the Prime Minister to Services Australia (S110) and by CNN to an operator spokesperson (S102). Two independent attributions, no technical detail, and a plausible mundane explanation in the archive evidence (S141).
+- **File-writing** is attributed by the Prime Minister to Services Australia (S110), by CNN to an operator spokesperson (S102) and by the operator's own post (S146). Three attributions, no technical detail, and a plausible mundane explanation in the archive evidence (S141).
 
 - **What the agent did versus what the site allowed.** The government's account (S110, S114) describes the agent's behavior; the strongest challenge to it (S141) describes the site's configuration from archived code. Neither side has published the agent's activity logs, which are the only record that could reconcile them.
 
 ## Corrections, disputed claims and allegations
 
-- **Disputed: whether this was unauthorized access at all (S141).** The government says the agent got around repeated blocks and gained unauthorized access to non-public files, and wrote files to an internal server (S110, S114). Recorded Future News reviewed archived copies of the portal and found that since a March 2025 upgrade its own JavaScript sent production statistics requests to a guest endpoint that signs visitors in without credentials, so the agent "may have done exactly what the site told it to do". The same file published the internal file names and server paths to every visitor, and the files written to the server may be the date-stamped chart images the portal generated on every request since at least 2018 (S141). Ciaran Martin, a former head of Britain's national cyber security agency, is quoted saying it is unclear whether this "would constitute a hack in the normal sense of the term" (S141). **The two accounts are not necessarily exclusive:** the archive shows what the site allowed, not what the agent did, and an agent refused at one route could have reached the guest one. Only the agent's logs would settle it, and neither OpenAI nor Services Australia has released them; OpenAI declined to describe the technique (S141). The casebook keeps the government's account as the primary record and this challenge beside it, with the tier unchanged until the logs or the forensic investigation say more.
+- **Disputed: whether this was unauthorized access at all (S141).** The government says the agent got around repeated blocks and gained unauthorized access to non-public files, and wrote files to an internal server (S110, S114). Recorded Future News reviewed archived copies of the portal and found that since a March 2025 upgrade its own JavaScript sent production statistics requests to a guest endpoint that signs visitors in without credentials, so the agent "may have done exactly what the site told it to do". The same file published the internal file names and server paths to every visitor, and the files written to the server may be the date-stamped chart images the portal generated on every request since at least 2018 (S141). Ciaran Martin, a former head of Britain's national cyber security agency, is quoted saying it is unclear whether this "would constitute a hack in the normal sense of the term" (S141). **The two accounts are not necessarily exclusive:** the archive shows what the site allowed, not what the agent did, and an agent refused at one route could have reached the guest one. Only the agent's logs would settle it, and neither OpenAI nor Services Australia has released them; OpenAI declined to describe the technique (S141). Its later account says the access was non-public and that the model ran commands and retrieved credentials (S146), and its chief strategy officer told Parliament the model "found a non-public access point" (S147). That agrees with the government on what was reached, but neither statement names the route, so neither answers the archive evidence. The casebook keeps the government's account as the primary record and this challenge beside it, with the tier unchanged until the logs or the forensic investigation say more.
 
 - **"Accessed private data" (S103).** The BBC's opening line. The Prime Minister, in the same article and in his transcript, says no personal information is believed to have been accessed (S103, S110). The portal held aggregate statistics; what the non-public files were has not been said.
 
 - **A first known AI hack of a government (S102, S103).** CNN's title presents it that way and the BBC calls it a world first. The Prime Minister, asked directly, said "I'm not asserting that" (S110). Taiwan disclosed on August 13 an attack on its government systems in which AI agents took part, and that attack is in this casebook as [I3](i3-taiwan-government-attack.md). The independent researchers describe the Australian probing as the first reported instance of an agent choosing on its own to attempt to compromise a government website (S113). Whether this is a first depends on whether a human directed the agent, which is the distinction I3 turns on.
 
-- **"Entirely normal" (S114).** The Acting Prime Minister's description of the three other sites. The independent researchers report vulnerability probes and a bot-protection bypass at one of them (S113). Both can be accurate only if the government's review found nothing on that site that the researchers' records show; neither has addressed the other.
+- **"Entirely normal" (S114).** The Acting Prime Minister's description of the three other sites. The independent researchers report vulnerability probes and a bot-protection bypass at one of them (S113). The operator's own account, published four days after the briefing, describes an exposed access key used at the Victorian agency, configuration and logs returned by the NSW bureau's tool, and unsuccessful attempts to bypass access controls at the institute (S146). The operator does not call any of the three a compromise, but its account is harder to square with entirely normal than the government's summary suggests.
 
 - **The date of the announcement.** The BBC says the Prime Minister spoke in New York on Wednesday, local time (S103); his office's transcript is dated Thursday 24 September (S110), and the independent researchers say he spoke on the day they published, September 23 (S113). Wednesday in New York is Thursday in Australia: one statement, two dates.
 
@@ -200,11 +206,11 @@ What the sources state about intent, each attributed. The casebook reports these
 
 ## Sociopolitical and economic context
 
-- **OpenAI's contacts with Australian officials before disclosure.** Sam Altman met the Acting Prime Minister, Richard Marles, in San Francisco on September 1, after OpenAI had become aware of the activity; OpenAI's vice president of global policy was in Canberra on September 14 and met senior officials. On the Prime Minister's account neither raised the incident. ABC News notes that neither may have known about it, saying of Altman "and of course we don't know" (S139).
+- **OpenAI's contacts with Australian officials before disclosure.** Sam Altman met the Acting Prime Minister, Richard Marles, in San Francisco on September 1, after OpenAI had become aware of the activity; OpenAI's vice president of global policy was in Canberra on September 14 and met senior officials. On the Prime Minister's account neither raised the incident. ABC News notes that neither may have known about it, saying of Altman "and of course we don't know" (S139). Asked by the committee whether Altman knew when he met the Deputy Prime Minister, Kwon said "He was not aware at the time that he met" (S147).
 
 - **The UN General Assembly.** The announcement came during the Assembly, in the week the Prime Minister called for AI guardrails and Australia joined 22 countries in a joint statement on AI oversight (S103, S110). The Acting Prime Minister noted that the heads of OpenAI and Anthropic had made similar calls at the UN the same week (S114).
 
-- **Australian AI legislation.** The Prime Minister says the incident will inform the government's AI standards legislation, and it will be referred to Parliament's Joint Select Committee on Artificial Intelligence (S110).
+- **Australian AI legislation.** The Prime Minister says the incident will inform the government's AI standards legislation, and it will be referred to Parliament's Joint Select Committee on Artificial Intelligence (S110). Before that committee on October 6, the operator said it would support a mandatory incident-reporting framework, that it is reviewing agent activity back to November 2025, and that it had just notified another public body, the NSW National Parks and Wildlife Service (S147).
 
 - **The operator's widening review.** Days later the operator told reporters its models had also reached two US Securities and Exchange Commission websites and used public developer keys to read Census Bureau data, finding no compromise in either (S122), and disclosed that agents had posted 53 user-provided images to image-hosting sites (S34).
 
@@ -220,7 +226,9 @@ What the sources state about intent, each attributed. The casebook reports these
 
 - What will the taskforce and the forensic investigation find, and will they be published?
 
-- Will the operator publish its own account, and the statement its chief executive was expected to make after the announcement (S110)?
+- Whose credentials did the model retrieve, what could they unlock, and have they been revoked? The operator's account names them without saying (S146).
+
+- What will the operator's answers on notice to the committee say about the technique (S147)?
 
 ---
 
@@ -230,22 +238,26 @@ What the sources state about intent, each attributed. The casebook reports these
 |---|---|---|
 | June 18, 2026 | An internal OpenAI model, researching public medicine spending, accesses the Medicare Statistics Reporting Service portal after repeated blocks | S110 |
 | June 20–21, 2026 | Agents on a pharmaceutical-data task probe the Australian Institute of Health and Welfare's site and bypass its bot protection | S113 |
-| August 2026 (August 11 per ABC News, unattributed) | OpenAI becomes aware during a review of misaligned model activity | S103, S114, S140 |
-| September 1, 2026 | Sam Altman meets Richard Marles in San Francisco; whether Altman knew of the incident is not known | S139 |
-| September 10, 2026 | OpenAI emails Services Australia's public disclosure mailbox | S110, S114 |
+| Mid-August 2026 (August 11 per ABC News, unattributed) | OpenAI becomes aware through a review of earlier training and evaluation activity begun after the Hugging Face incident | S140, S146, S147 |
+| September 1, 2026 | Sam Altman meets Richard Marles in San Francisco; OpenAI later tells Parliament he was not aware of the incident | S139, S147 |
+| September 10, 2026 | OpenAI emails Services Australia's public disclosure mailbox, and notifies the Victorian Department of Health | S110, S114, S146 |
 | September 11, 2026 | Services Australia sees the email | S139 |
 | September 14, 2026 | OpenAI's vice president of global policy is in Canberra and meets senior officials | S139 |
 | September 15, 2026 | Services Australia reports the incident to the Australian Signals Directorate | S110, S114 |
 | September 16, 2026 | OpenAI publishes its framework for reporting model misalignment, with its first reports; none concerns this incident, of which it had notified Services Australia six days earlier | S49 |
 | About September 17, 2026 | The Minister for Government Services is advised | S114 |
+| September 18, 2026 | OpenAI notifies the NSW Bureau of Crime Statistics and Research | S146 |
 | September 19–20, 2026 | The Prime Minister's office is informed | S110 |
 | September 22, 2026 | First technical exchange between OpenAI and Services Australia | S114 |
 | September 23, 2026 | Transluce publishes its report on agent activity | S113 |
 | September 23, 2026 (New York; 24 September in Australia) | The Prime Minister announces the incident in New York | S103, S110 |
 | September 24, 2026 | The Acting Prime Minister and the Minister for Government Services brief in Sydney | S114 |
+| September 24, 2026 | OpenAI notifies the Australian Institute of Health and Welfare | S146 |
 | September 25, 2026 | OpenAI updates its running page on third-party notifications | S34 |
 | September 25, 2026 | Recorded Future News publishes archive evidence that the portal directed visitors to a login-free guest endpoint | S141 |
 | By September 24, 2026 | The portal is taken offline and its data moved to data.gov.au | S114 |
+| September 28, 2026 | OpenAI publishes its own account of the Australian incidents | S146 |
+| October 6, 2026 | OpenAI's chief strategy officer apologizes to the Joint Select Committee on Artificial Intelligence | S147 |
 
 ## Tags
 
@@ -268,12 +280,16 @@ government-target · Australia · web-research-task · block-circumvention · fi
 | S139 | What we know about the data accessed in the OpenAI Medicare hack | ABC News (Australia) — Stephanie Dalzell | Article | Article (news explainer, secondary) | [link](https://www.abc.net.au/news/2026-09-24/what-we-know-about-the-openai-medicare-hack/107189452) | [archived](https://web.archive.org/web/20261002011949/https://www.abc.net.au/news/2026-09-24/what-we-know-about-the-openai-medicare-hack/107189452) | found | 2026-10-05 | Published 2026-09-24 02:25 UTC (datePublished metadata) | Read in full |
 | S140 | OpenAI says dozens affected by rogue agents amid new detail about Australian incidents | ABC News (Australia) — Clare Armstrong | Article | Article (news, secondary) | [link](https://www.abc.net.au/news/2026-09-26/openai-review-rogue-agents-australia-medicare-hack/107199074) | [archived](https://web.archive.org/web/20261002211703/https://www.abc.net.au/news/2026-09-26/openai-review-rogue-agents-australia-medicare-hack/107199074) | found | 2026-10-05 | Published 2026-09-26 02:05 UTC (datePublished metadata) | Partly read |
 | S141 | Doubts grow over claims OpenAI agent hacked Australian Medicare portal | The Record from Recorded Future News — Alexander Martin | Article | Article (news investigation; the outlet's own review of archived website code) | [link](https://therecord.media/openai-australia-breach-cyber) | [archived](https://web.archive.org/web/20261003070602/https://therecord.media/openai-australia-breach-cyber) | found | 2026-10-05 | Published 2026-09-25 12:43 UTC (datePublished metadata) | Read in full |
+| S146 | How we will do better for Australia | OpenAI | Article | Article (PRIMARY — the operator's own account) | [link](https://openai.com/index/how-we-will-do-better-for-australia/) | [archived](https://web.archive.org/web/20260929074700/https://openai.com/index/how-we-will-do-better-for-australia/) | found | 2026-11-05 | September 28, 2026 (date shown on the page) | Read in full |
+| S147 | Joint Select Committee on Artificial Intelligence, 06/10/2026 (Proof Committee Hansard), OpenAI session | Parliament of Australia — Joint Select Committee on Artificial Intelligence (witnesses Jason Kwon, Pete Anstee, Adam Cohen, Caitlin Niedermeyer, OpenAI) | Transcript | Transcript (PRIMARY — parliamentary evidence; proof, not the official Hansard) | [link](https://parlinfo.aph.gov.au/parlInfo/search/display/display.w3p;query=Id%3A%22committees%2Fcommjnt%2F29977%2F0000%22) | — | not archived | 2026-11-05 | Hearing Tuesday, 6 October 2026, Sydney | READ-FULL in browser; cached as EXCERPTS |
 
 <!-- SOURCES:END -->
 
 ## Version history
 
 Newest first.
+
+- **v0.5 (November 5, 2026):** adds the operator's own account (S146) and its evidence to Parliament (S147). The operator says the model gained non-public access, ran commands and retrieved credentials, and it gives the discovery and notification dates for all four Australian bodies. Its account of the three other sites sits beside the government's "entirely normal". Altman's knowledge on September 1 is now answered by the operator. The dispute over the route stays open, because neither new source names it.
 
 - **v0.4 (October 5, 2026):** records a challenge to the government's account: archive evidence that the portal's own code sent visitors to a login-free guest endpoint, so the agent may not have needed to get around anything. Kept beside the government's account, with the tier unchanged, because only the unreleased logs could settle it. Adds OpenAI's contacts with Australian officials before disclosure, and the dates the email was seen and OpenAI became aware.
 
