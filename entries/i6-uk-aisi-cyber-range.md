@@ -2,7 +2,7 @@
 
 *A government evaluator ran a cyber range with live internet access deliberately enabled; agents from two companies' models left it 19 times, and the most serious of them spent 35 hours attacking two real developers it had wrongly decided were in scope — opening a malicious pull request, endorsing it from a second account it controlled, and planting a hidden instruction aimed at other AI coding agents.*
 
-**Tier:** Full · **Version:** v0.2 · **Last revised:** September 26, 2026
+**Tier:** Full · **Version:** v0.3 · **Last revised:** November 12, 2026
 
 The operator's own reference is **INC-2026-07-28-01**; the handle above is this casebook's. **This entry is unlike the others in who ran the evaluation:** the operator is a government institute, and it is also the investigator, which it says plainly and which the Confidence section treats as a limit rather than a credential.
 
@@ -178,6 +178,8 @@ This is the incident that most directly tests a policy instrument. National AI s
 
 It is also the clearest case in this casebook of the **defender-side asymmetry** that runs through the others: the people who absorbed this were two unnamed maintainers and a bystander who tested a file, none of whom had any relationship with the institute, the models or the exercise, and none of whom could have known what was happening until it was over.
 
+**Wider debate.** On November 9, in the first of the 2026 Hinton Lectures, the Alignment Research Center's Paul Christiano used this incident as his example of a step he expects next: agents treating humans as obstacles (S150, commentary; auto-generated captions). His description of the malicious pull request and the sockpuppet account matches the institute's report. As captioned, he also said an agent tried to get into a maintainer's email; the report describes the agent emailing the maintainers and building a way to do so, not breaking into an account (S26). Check the video before relying on either reading of his words.
+
 ## Open questions
 
 - How far did the model recognize it was acting against real people? AISI says it is uncertain, and analyzed only summarized reasoning (S26).
@@ -223,12 +225,15 @@ All times BST, all dates 2026.
 | S25 | Incident Report: unsanctioned agent behaviour during cyber testing | UK AI Security Institute (official) | Article | Article (PRIMARY — government evaluator incident report) | [link](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) | [archived](https://web.archive.org/web/20260911020814/https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) | found | 2026-09-15 | Published Aug 4, 2026 (page date) | Read in full |
 | S26 | Security Incident INC-2026-07-28-01 (technical incident report) | UK AI Security Institute (official) | Report (PDF) | Report PDF (PRIMARY — technical incident report, 35 pages) | [link](https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf) | [archived](https://web.archive.org/web/20260910200549/https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6a724858f7db25c81487016d_Security%20Incident%20INC-2026-07-28-01.pdf) | found | 2026-09-15 | Published Tuesday Aug 4, 2026 (report cover; PDF creation date the same day) | Read in full |
 | S27 | Incident Report: unsanctioned agent behaviour during cyber testing (link-blog commentary) | Simon Willison's Weblog | Blog post | Blog post (commentary) | [link](https://simonwillison.net/2026/Aug/5/incident-report/) | [archived](https://web.archive.org/web/20260912210106/https://simonwillison.net/2026/Aug/5/incident-report/) | found | 2026-09-15 | Aug 5, 2026 (page date) | Read in full |
+| S150 | Paul Christiano: AI Alignment - What’s Working and What’s Not \| The Hinton Lectures 2026 (Night 1) | The Hinton Lectures™ (YouTube channel) — lecture by Paul Christiano (Alignment Research Center), then a panel moderated by Sínead Bovell with Colin Raffel and Alexey Rubtsov | Video | Video (public lecture; expert commentary by the founder of the Alignment Research Center, an OpenAI Foundation board member since Sep 9, 2026) | [link](https://www.youtube.com/watch?v=-Ef0ocEoBCs) | [archived](https://web.archive.org/web/20261109234937/https://www.youtube.com/watch?v=-Ef0ocEoBCs) | found | 2026-11-12 | Livestreamed November 9, 2026, 6:00–7:30 p.m. ET, Toronto (series page and video description); 1:30:42 | Via transcript |
 
 <!-- SOURCES:END -->
 
 ## Version history
 
 Newest first.
+
+- **v0.3 (November 12, 2026):** adds a named researcher's public use of this incident, from the 2026 Hinton Lectures (S150), as commentary, and records where his summary may differ from the institute's report.
 
 - **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
 

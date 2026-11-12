@@ -21,12 +21,12 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 
 | Entry | Active | [Tier](docs/inclusion-criteria.md#tiers) | Last revised |
 |---|---|---|---|
-| [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I1 · The OpenAI–Hugging Face Incident](entries/i1-openai-agents-hugging-face-intrusion.md) | Apr – Jul 2026 · ~3 months | [Full](docs/inclusion-criteria.md#tiers) | Nov 12, 2026 |
 | [I2 · The OpenAI Agents' Wiki Board](entries/i2-openai-agents-wiki-board.md) | May – Jul 2026 · ~7 weeks | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I3 · The Taiwan Government Attack](entries/i3-taiwan-government-attack.md) — *draft* | Jul 2026 · 4 days | [Disputed](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I4 · The Anthropic Capture-the-Flag Breakouts](entries/i4-anthropic-evaluation-breakouts.md) | Apr – Jul 2026 · 6 runs, hours each | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I5 · The Eight Attempts to Stop](entries/i5-anthropic-january-breakout.md) | Jan 2026 · a single run | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
-| [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | Jul 2026 · 4 days, 122 runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
+| [I6 · The AI Security Institute's Cyber Range](entries/i6-uk-aisi-cyber-range.md) — *draft* | Jul 2026 · 4 days, 122 runs | [Full](docs/inclusion-criteria.md#tiers) | Nov 12, 2026 |
 | [I7 · The RubyGems Package Flood](entries/i7-rubygems-gemstuffer.md) — *draft* | May – Jun 2026 · 2 days, then a tail | [Disputed](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I8 · The Gemini Evaluation Intrusions](entries/i8-google-gemini-evaluation-intrusions.md) — *draft* | May 2026 · three intrusions | [Provisional](docs/inclusion-criteria.md#tiers) | Sep 26, 2026 |
 | [I9 · The Australian Medicare Statistics Portal Intrusion](entries/i9-openai-agent-australian-medicare-portal.md) — *draft* | Jun 2026 · a single task | [Full](docs/inclusion-criteria.md#tiers) | Nov 5, 2026 |
