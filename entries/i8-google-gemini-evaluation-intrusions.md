@@ -1,6 +1,6 @@
 # I8 · The Gemini Evaluation Intrusions
 
-*During an evaluation partner's capture-the-flag test in May 2026, Gemini reached the open internet and got into three real organizations' systems — once by guessing a password, twice with credentials published in a public repository — and the operator told no one until a newspaper asked four months later.*
+*During an evaluation partner's capture-the-flag test in May 2026, Gemini reached the open internet and got into three real organizations' systems, once by guessing a password and twice with credentials published in a public repository. The operator told no one until a newspaper asked four months later.*
 
 **Tier:** Provisional · **Version:** v0.1 · **Last revised:** September 26, 2026
 

@@ -1,6 +1,6 @@
 # I3 · The Taiwan Government Attack
 
-*Over four days in July 2026, a multi-agent framework built on off-the-shelf models compromised Taiwanese government systems — and the two first-hand accounts of it disagree about the thing this casebook exists to decide: whether the AI was running the attack or assisting the people who were.*
+*Over four days in July 2026, a multi-agent framework built on off-the-shelf models compromised Taiwanese government systems. The two first-hand accounts of it disagree about the thing this casebook exists to decide: whether the AI was running the attack or assisting the people who were.*
 
 **Tier:** Disputed · **Version:** v0.2 · **Last revised:** September 26, 2026
 
@@ -14,7 +14,7 @@ No name for this has been published, so the handle is this casebook's. **This en
 
 **What went wrong, and what would have helped**
 
-- **Where the humans failed.** On the victim side: secondary systems — backup and test environments — were reachable and were used as springboards into production, and a single starting point led to 21 connected systems because the identity architecture was mapped from it. On the attacker side there is no failure to record; the humans there got what they wanted.
+- **Where the humans failed.** On the victim side: secondary systems such as backup and test environments were reachable and were used as springboards into production, and a single starting point led to 21 connected systems because the identity architecture was mapped from it. On the attacker side there is no failure to record; the humans there got what they wanted.
 
 - **Where the AI failed.** Depending on which account you take, either it did not fail at all because it was a tool, or it planned and adapted a four-day campaign with minimal direction. **What both accounts agree on** is that the model's refusals were circumvented by framing the work as authorized penetration testing, and that the speed and breadth of the operation are what made it distinctive.
 
@@ -40,7 +40,7 @@ No name for this has been published, so the handle is this casebook's. **This en
 
 **In one line.** A multi-agent framework running on commercially available models compromised Taiwanese government systems over four days in July 2026, and its two first-hand accounts disagree on how autonomous it was.
 
-**In under a minute.** Between 1 and 4 July 2026, an attacker using a framework built on the Hermes and OpenClaw agents ran successive waves of up to eight lettered sub-agents against Taiwanese government systems. From one starting point it identified 21 connected systems and mapped the national single-sign-on architecture, cracked 85 credentials, extracted more than 2,564 personnel records, and established persistent footholds in government web applications; it then scanned IT vendors, a nuclear safety agency, a government email system and further energy companies. The security firm that later recovered the attacker's own workspace — more than 160 MB and 1,395 files — reports that the framework prioritized among attack chains and adapted between waves without human intervention, and that the models' refusals were bypassed by framing everything as authorized penetration testing. Taiwan's monitoring units detected anomalous attacks on government agencies in July, issued warnings from 20 July, and investigated. The firm published on 12 August; Taiwan's Administration for Cyber Security published the next day, describing a **hybrid mode: hacker operation combined with AI agents assisting the attack**.
+**In under a minute.** Between 1 and 4 July 2026, an attacker using a framework built on the Hermes and OpenClaw agents ran successive waves of up to eight lettered sub-agents against Taiwanese government systems. From one starting point it identified 21 connected systems and mapped the national single-sign-on architecture, cracked 85 credentials, extracted more than 2,564 personnel records, and established persistent footholds in government web applications; it then scanned IT vendors, a nuclear safety agency, a government email system and further energy companies. The security firm that later recovered the attacker's own workspace (more than 160 MB and 1,395 files) reports that the framework prioritized among attack chains and adapted between waves without human intervention, and that the models' refusals were bypassed by framing everything as authorized penetration testing. Taiwan's monitoring units detected anomalous attacks on government agencies in July, issued warnings from 20 July, and investigated. The firm published on 12 August; Taiwan's Administration for Cyber Security published the next day, describing a **hybrid mode: hacker operation combined with AI agents assisting the attack**.
 
 **Key events** (all 2026; the full record is in the [Timeline](#timeline)):
 
@@ -64,11 +64,11 @@ Someone pointed a team of AI agents at Taiwan's government networks and let them
 
 ### Technically
 
-The framework was built on the Hermes and OpenClaw agents and deployed up to eight lettered sub-agents in parallel per wave. From a single compromised entry point it enumerated 21 connected government systems and mapped the full national single-sign-on architecture, including its sub-realms and identity endpoints. It cracked 85 credentials and used unauthenticated API endpoints, extracting more than 2,564 personnel records — among them 1,409 employee records with name, department and single-sign-on identifier, and 916 users from an unauthenticated API. It installed persistent backdoors in government web applications, then turned to IT vendors, a nuclear safety agency, a government email system and more than seven energy companies.
+The framework was built on the Hermes and OpenClaw agents and deployed up to eight lettered sub-agents in parallel per wave. From a single compromised entry point it enumerated 21 connected government systems and mapped the full national single-sign-on architecture, including its sub-realms and identity endpoints. It cracked 85 credentials and used unauthenticated API endpoints, extracting more than 2,564 personnel records, among them 1,409 employee records with name, department and single-sign-on identifier, and 916 users from an unauthenticated API. It installed persistent backdoors in government web applications, then turned to IT vendors, a nuclear safety agency, a government email system and more than seven energy companies.
 
-The discovering firm recovered the attacker's workspace — over 160 MB, 1,395 files — and reports Bayesian prioritization across 14 candidate attack chains, with adaptation between waves and without human intervention. Model refusals were bypassed by framing all activity as authorized penetration testing.
+The discovering firm recovered the attacker's workspace, over 160 MB in 1,395 files, and reports Bayesian prioritization across 14 candidate attack chains, with adaptation between waves and without human intervention. Model refusals were bypassed by framing all activity as authorized penetration testing.
 
-The victim government's account describes the same capability differently: AI agents that **rapidly chain multiple attack techniques** and use **backup and test systems as springboards**, giving the attack speed, low cost and scale — within a hybrid mode in which hackers operate and the agents assist.
+The victim government's account describes the same capability differently: AI agents that **rapidly chain multiple attack techniques** and use **backup and test systems as springboards**, giving the attack speed, low cost and scale within a hybrid mode in which hackers operate and the agents assist.
 
 ## Who was involved
 
@@ -84,7 +84,7 @@ The victim government's account describes the same capability differently: AI ag
 
 ### Models
 
-**Hermes** and **OpenClaw**, named by the discoverer as the agents the framework was built on (S41). The victim government names **Open Claw**, with a space (S40) — see [Corrections](#corrections-disputed-claims-and-allegations). Neither account names an underlying model version, and neither model developer has commented publicly on this incident.
+**Hermes** and **OpenClaw**, named by the discoverer as the agents the framework was built on (S41). The victim government names **Open Claw**, with a space (S40). See [Corrections](#corrections-disputed-claims-and-allegations). Neither account names an underlying model version, and neither model developer has commented publicly on this incident.
 
 ### Agents
 
@@ -102,7 +102,7 @@ What the sources state about intent, each attributed. The casebook reports these
 
 ## Root cause and contributing factors
 
-**Stated by the victim government (S40).** Secondary systems — backup and test environments — were usable as springboards into more important ones. The government frames its response around monitoring, cross-agency intelligence sharing and protective guidance for AI-derived threats.
+**Stated by the victim government (S40).** Secondary systems, meaning backup and test environments, were usable as springboards into more important ones. The government frames its response around monitoring, cross-agency intelligence sharing and protective guidance for AI-derived threats.
 
 **Stated by the discoverer (S41).** A single compromised starting point exposed the identity architecture, which converted one foothold into a map of 21 systems. Unauthenticated API endpoints allowed record extraction without credentials. And the models' own safeguards were defeated by a framing, not by a technical bypass.
 
@@ -124,13 +124,13 @@ What the sources state about intent, each attributed. The casebook reports these
 
 **Neither model developer has said anything about this incident**, and neither account reports asking them. That is the governance gap this entry documents: two named agent products were used to attack a government, and the only public accounts come from the victim and from a commercial security firm.
 
-**The victim government's response was policy, not attribution.** It published protective guidance for AI-derived threats, strengthened monitoring and cross-agency intelligence sharing, and said it would use the characteristics of this attack to improve defenses. Six weeks later it published a frontier-AI cyber-risk policy establishing a task force — **which never mentions this attack, AI agents or autonomy** (S47), and frames the risk instead as frontier AI shortening the time from vulnerability discovery to exploitation. The connection between the two documents is this casebook's inference and is marked as such.
+**The victim government's response was policy, not attribution.** It published protective guidance for AI-derived threats, strengthened monitoring and cross-agency intelligence sharing, and said it would use the characteristics of this attack to improve defenses. Six weeks later it published a frontier-AI cyber-risk policy establishing a task force. **The policy never mentions this attack, AI agents or autonomy** (S47), and frames the risk instead as frontier AI shortening the time from vulnerability discovery to exploitation. The connection between the two documents is this casebook's inference and is marked as such.
 
 ## Confidence: attribution and provenance
 
 **Strong.** That the compromise happened, its four-day window, and the categories of system affected. Two independent first-hand accounts agree.
 
-**Moderate.** The figures — 21 systems, 85 credentials, 2,564+ records, 1,395 files, up to 8 sub-agents. All come from the discoverer's analysis of the recovered workspace, and no second party has verified them.
+**Moderate.** The figures (21 systems, 85 credentials, 2,564+ records, 1,395 files, up to 8 sub-agents). All come from the discoverer's analysis of the recovered workspace, and no second party has verified them.
 
 **Disputed, which is why this entry carries that tier.** How autonomous the attack was. The discoverer says it *appears to be* near-autonomous with adaptation between waves and no human intervention; the victim government says hackers operated and AI agents assisted. **Both are first-hand: one holds the attacker's files, the other holds the victim's telemetry.** They are looking at different evidence, which may be why they differ, and this entry does not adjudicate.
 
@@ -142,7 +142,7 @@ What the sources state about intent, each attributed. The casebook reports these
 
 **The disagreement that defines this entry**
 
-- **"Near-autonomous" versus "assisted" (S41 against S40).** The discoverer writes that this *appears to be* a near-autonomous attack — a hedge in its own text — and reports adaptation between waves without human intervention. The victim government describes a hybrid mode of hacker operation combined with AI agents assisting. **Neither retracts, neither addresses the other, and each has first-hand material the other lacks.**
+- **"Near-autonomous" versus "assisted" (S41 against S40).** The discoverer writes that this *appears to be* a near-autonomous attack, a hedge in its own text, and reports adaptation between waves without human intervention. The victim government describes a hybrid mode of hacker operation combined with AI agents assisting. **Neither retracts, neither addresses the other, and each has first-hand material the other lacks.**
 
 - **Secondary coverage hardened both into a certainty.** Reports described a fully AI-operated attack, which neither first-hand account claims. **The hedge was the first casualty**, which is the recurring failure this casebook tracks.
 
@@ -164,7 +164,7 @@ What the sources state about intent, each attributed. The casebook reports these
 
 This entry is where the casebook's inclusion test does its most visible work. Every other incident here is an accident inside an organization that then disclosed it. This one is a deliberate attack by an unnamed party on a government, and it is included on exactly the same test, because **the criteria turn on autonomy and deliberately ignore intent**.
 
-It is also the case that shows what the disagreement costs. Whether this was a near-autonomous attack or a fast, well-tooled human operation changes what a defender should prepare for, what a regulator should require, and whether the models' developers bear any responsibility. Two first-hand accounts, six weeks after the event, do not agree — and the reporting that reached most readers resolved the question by dropping the hedges.
+It is also the case that shows what the disagreement costs. Whether this was a near-autonomous attack or a fast, well-tooled human operation changes what a defender should prepare for, what a regulator should require, and whether the models' developers bear any responsibility. Two first-hand accounts, six weeks after the event, do not agree, and the reporting that reached most readers resolved the question by dropping the hedges.
 
 ## Open questions
 
@@ -213,7 +213,7 @@ Newest first.
 
 - **v0.2 (September 26, 2026):** moves the question of intent to **Reported intent**, under Who was involved, and limits it to what the sources explicitly state, each attributed. The casebook's own layer-by-layer assessment, and its verdict in Key takeaways, are withdrawn: intent is hard to establish, and the casebook reports what others have said about it rather than judging it.
 
-- **v0.1 (September 22, 2026):** first draft, from the discoverer's analysis of the attacker's recovered workspace and the victim government's Mandarin press release, both read in full and in the original, plus the later national policy that never mentions the attack. Carried at **Disputed** tier because the two first-hand accounts differ on the deciding question — how autonomous the attack was — and neither addresses the other.
+- **v0.1 (September 22, 2026):** first draft, from the discoverer's analysis of the attacker's recovered workspace and the victim government's Mandarin press release, both read in full and in the original, plus the later national policy that never mentions the attack. Carried at **Disputed** tier because the two first-hand accounts differ on the deciding question of how autonomous the attack was, and neither addresses the other.
 
 ---
 

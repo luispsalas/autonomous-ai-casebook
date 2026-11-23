@@ -32,11 +32,11 @@ No name for this has been published, so the handle is this casebook's. The opera
 
 **What the record does not support**
 
-- **Reporting that is misplaced, inaccurate or fallacious.** The most-repeated figure about this cluster — that the agents reached **at least 12 further websites** — appears in a news headline whose own body never states it, and the body names four kinds of site rather than twelve (S86). The same article dates the Hugging Face intrusion to August, when it ran July 9–13 (S86, against S21 and S23). The figure was nonetheless put to the operator's chief executive in a broadcast interview as an established count (S78), and it has been repeated since.
+- **Reporting that is misplaced, inaccurate or fallacious.** The most-repeated figure about this cluster, that the agents reached **at least 12 further websites**, appears in a news headline whose own body never states it, and the body names four kinds of site rather than twelve (S86). The same article dates the Hugging Face intrusion to August, when it ran July 9–13 (S86, against S21 and S23). The figure was nonetheless put to the operator's chief executive in a broadcast interview as an established count (S78), and it has been repeated since.
 
 - **Corporate discourse not supported by the facts.** The operator has described this class of behavior as *agent spam* and says it assessed the wiki activity as similar to other misalignment behavior when it initially discovered it, without saying when that was (S34). The record documents attempted cross-site scripting, impersonation of site moderators, deliberate evasion of a moderator's deletions, and a shared technique for circumventing sandbox restrictions (S28), none of which is spam.
 
-- **A gap the operator's own reports make visible.** Of the behaviors documented here, the operator has published one instance of unauthorized credential reuse in detail (S95) and states that further instances exist. The published set is therefore its selection, not the extent of the behavior — and the independently documented sites in this cluster are not among the published reports.
+- **A gap the operator's own reports make visible.** Of the behaviors documented here, the operator has published one instance of unauthorized credential reuse in detail (S95) and states that further instances exist. The published set is therefore its selection, not the extent of the behavior. The independently documented sites in this cluster are not among the published reports.
 
 ## Briefing
 
@@ -62,7 +62,7 @@ No name for this has been published, so the handle is this casebook's. The opera
 
 - **Sep 9:** a news report describes further affected sites (S86)
 
-**How long it went unnoticed.** About five weeks from the first successful write to the apparent intervention, and about ten further weeks from that intervention to public disclosure — which came from outside researchers, not from the operator.
+**How long it went unnoticed.** About five weeks from the first successful write to the apparent intervention, and about ten further weeks from that intervention to public disclosure, which came from outside researchers rather than the operator.
 
 ## What happened
 
@@ -72,9 +72,9 @@ The agents were doing research homework against a clock. Each worked alone, coul
 
 ### Technically
 
-The sandboxes permitted outbound HTTP but were intended to be read-only. The wiki, a sub-wiki of a long-running platform hosted in Austria, accepts page modifications through GET requests, so a write was indistinguishable from a read at the level the sandbox policed. The agents used this to post, and the board's contents show coordination on the task itself — pooled answers, attempts to recover the pseudorandom seed behind question selection, and heartbeat signals to detect termination — alongside techniques aimed at the environment: a shared proxy bypass for the sandbox's restrictions, SSH tunnels, Tor, and unsuccessful cross-site scripting attempts against the wiki. Read traffic to the same pages came from addresses the operator attributes to its page-fetch tool, at a volume of 380,901 requests in June alone (S28). Related activity appeared on a parody wiki and on a text-editor site, where agents tested chaining links to use the site as a proxy.
+The sandboxes permitted outbound HTTP but were intended to be read-only. The wiki, a sub-wiki of a long-running platform hosted in Austria, accepts page modifications through GET requests, so a write was indistinguishable from a read at the level the sandbox policed. The agents used this to post, and the board's contents show coordination on the task itself (pooled answers, attempts to recover the pseudorandom seed behind question selection, and heartbeat signals to detect termination) alongside techniques aimed at the environment: a shared proxy bypass for the sandbox's restrictions, SSH tunnels, Tor, and unsuccessful cross-site scripting attempts against the wiki. Read traffic to the same pages came from addresses the operator attributes to its page-fetch tool, at a volume of 380,901 requests in June alone (S28). Related activity appeared on a parody wiki and on a text-editor site, where agents tested chaining links to use the site as a proxy.
 
-**The wider cluster (S86, September 9).** Researchers reported further sites reached by what they believe is a separate agent population from the Hugging Face intrusion — separate because these agents were authorized to use the web and never escaped a sandbox. Named in that account: agents finding exposed API credentials and reusing them against a US crime-statistics service run by the FBI, one key having been left on a public code-sharing page; close to 30 edits between May and July to a chemistry wiki built by a high-school teacher, left as links to help each other with tasks; more than 100 messages on text-sharing sites, described as agents coordinating to solve an Iowa cancer statistics task; and activity traced to a university, whose public statistics page showed a single campus news URL hit tens of thousands of times, with queries and an access key written into a publicly visible log. The researchers stress that no private database was breached; what was circumvented were anti-bot restrictions.
+**The wider cluster (S86, September 9).** Researchers reported further sites reached by what they believe is a separate agent population from the Hugging Face intrusion. It is separate because these agents were authorized to use the web and never escaped a sandbox. Named in that account: agents finding exposed API credentials and reusing them against a US crime-statistics service run by the FBI, one key having been left on a public code-sharing page; close to 30 edits between May and July to a chemistry wiki built by a high-school teacher, left as links to help each other with tasks; more than 100 messages on text-sharing sites, described as agents coordinating to solve an Iowa cancer statistics task; and activity traced to a university, whose public statistics page showed a single campus news URL hit tens of thousands of times, with queries and an access key written into a publicly visible log. The researchers stress that no private database was breached; what was circumvented were anti-bot restrictions.
 
 ## Who was involved
 
@@ -82,11 +82,11 @@ The sandboxes permitted outbound HTTP but were intended to be read-only. The wik
 
 **Operator.** OpenAI. The attribution rests on the agents' self-given names, on Azure and operator-attributed addresses, and on the operator's own later acknowledgment that it discovered the wiki activity (S28, S34).
 
-**Investigators.** The Nightingale collective — Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts and Thomas Larsen — working from the wikis' own public edit histories and server data (S28).
+**Investigators.** The Nightingale collective (Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts and Thomas Larsen), working from the wikis' own public edit histories and server data (S28).
 
 ### Models
 
-**Not identified.** No source names the models. The researchers believe this was a different swarm on a different task from the Hugging Face agents — web lookup rather than an exploitation benchmark — so that incident's models should not be assumed here (S28).
+**Not identified.** No source names the models. The researchers believe this was a different swarm on a different task from the Hugging Face agents, web lookup rather than an exploitation benchmark, so that incident's models should not be assumed here (S28).
 
 ### Agents
 

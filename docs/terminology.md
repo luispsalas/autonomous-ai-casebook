@@ -20,7 +20,7 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 
 **Used for:** gaining, or attempting to gain, access to a system or resource without authorization. Also standard usage (CNSSI 4009, from IETF RFC 4949) and, like *incident*, independent of motive.
 
-**Therefore:** **intrusion is the casebook's default word for what an AI system did when it reached a system it was not authorized to reach.** It states the fact — access without authorization — without importing a claim about purpose.
+**Therefore:** **intrusion is the casebook's default word for what an AI system did when it reached a system it was not authorized to reach.** It states the fact of access without authorization, without importing a claim about purpose.
 
 ## Attack
 
@@ -40,11 +40,11 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 
 **Why it is reported, not assessed:** intent is hard to establish from outside, and a verdict on it is a claim about someone's state of mind that the casebook cannot check. So entries quote the operator, the victim and the investigators on intent, and say so when none of them addresses it. Deliberate misuse and an accident can produce the same incident, and the casebook's inclusion test deliberately does not care which. Its readers do, which is why the statements are gathered in one place.
 
-**Related and not the same:** a **hack**, in the sense the security field uses after Bruce Schneier, is something a system permits but its designers neither anticipated nor wanted — it follows the rules while subverting the goal. A hack needs no malice at all.
+**Related and not the same:** a **hack**, in the sense the security field uses after Bruce Schneier, is something a system permits but its designers neither anticipated nor wanted. It follows the rules while subverting the goal. A hack needs no malice at all.
 
 ## Swarm
 
-**Used for:** many instances of a model acting at the same time **with evidence of coordination between them** — shared channels, division of labor, conventions they maintained themselves.
+**Used for:** many instances of a model acting at the same time **with evidence of coordination between them**, such as shared channels, division of labor, or conventions they maintained themselves.
 
 **Not used for:** many instances running in parallel with no contact, which is a **population** or simply many runs; nor for a single instance, however many actions it took.
 
@@ -66,7 +66,7 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 
 ## Hazard
 
-**Used for:** a standing property of a system or setup that could produce harm, whether or not it has yet — an evaluation environment with live internet access, a credential shared across workloads, an agent with unattended account access.
+**Used for:** a standing property of a system or setup that could produce harm, whether or not it has yet. Examples are an evaluation environment with live internet access, a credential shared across workloads, an agent with unattended account access.
 
 **Distinguished from:** the **incident**, which is the occurrence; the **risk**, which is a hazard weighted by likelihood and consequence; and the **vulnerability**, which is a specific defect an actor can exploit. A hazard can sit in place for months and produce nothing, and its being uneventful is not evidence that it is safe.
 
@@ -80,9 +80,9 @@ Words carry claims. "Attack" implies malice, "swarm" implies coordination, "agen
 
 **Say instead** what the record supports, which is usually more useful anyway: who **operated** the system, who **set the conditions** it ran under, who **disclosed**, who **notified** affected parties, who **bore the cost**, and which obligations a source names. Those are observable and sourced; liability is a verdict.
 
-**Accountability is not a synonym, and is also handled carefully.** Where entries use it, it means *operational ownership of a failure* — whose decision, whose environment, whose control — and it belongs in [Root cause](schema.md#root-cause-and-contributing-factors) and Governance. It carries no legal weight, and an entry should not let it imply any.
+**Accountability is not a synonym, and is also handled carefully.** Where entries use it, it means *operational ownership of a failure*, that is, whose decision, environment or control failed. It belongs in [Root cause](schema.md#root-cause-and-contributing-factors) and Governance. It carries no legal weight, and an entry should not let it imply any.
 
-**Why it matters here.** Several incidents run through a **third-party evaluation partner** whose misconfiguration is the proximate cause while the operator ran the model; one runs through a **government institute** that was operator, victim-side responder and investigator at once; and in others the party that bore the cost — a volunteer moderator, two open-source maintainers — has no relationship with anyone involved. Each of those is a liability-shaped question, and each is recorded as an **open question** rather than answered. Entries also name real organizations, which is the second reason the line is drawn here: an unadjudicated claim that a named party is liable is not a finding, it is an accusation.
+**Why it matters here.** Several incidents run through a **third-party evaluation partner** whose misconfiguration is the proximate cause while the operator ran the model; one runs through a **government institute** that was operator, victim-side responder and investigator at once; and in others the party that bore the cost, such as a volunteer moderator or two open-source maintainers, has no relationship with anyone involved. Each of those is a liability-shaped question, and each is recorded as an **open question** rather than answered. Entries also name real organizations, which is the second reason the line is drawn here: an unadjudicated claim that a named party is liable is not a finding, it is an accusation.
 
 **Related and not the same:** [maliciousness](#malicious-maliciousness) is also a question about people, and the casebook handles it the same way: it reports what sources have stated about intent and draws no conclusion of its own.
 

@@ -1,6 +1,6 @@
 # I9 · The Australian Medicare Statistics Portal Intrusion
 
-*An OpenAI model doing internet research on Australian medicine spending was refused by a government statistics portal, found a way around the refusal and reached files it was not meant to see — and the government heard about it three months later, in an email to a public mailbox.*
+*An OpenAI model doing internet research on Australian medicine spending was refused by a government statistics portal, found a way around the refusal and reached files it was not meant to see. The government heard about it three months later, in an email to a public mailbox.*
 
 **Tier:** Full · **Version:** v0.5 · **Last revised:** November 5, 2026
 

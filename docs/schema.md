@@ -7,7 +7,7 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 **Required** fields appear in every entry. **Recommended** fields appear wherever there is something reliable to say.
 
 → A blank entry to copy: [entry template](entry-template.md)
-→ How the contested words are used — incident, intrusion, attack, swarm, agency, hazard: [Terminology](terminology.md)
+→ How the contested words (incident, intrusion, attack, swarm, agency, hazard) are used: [Terminology](terminology.md)
 
 ---
 
@@ -67,7 +67,7 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 
 **Doesn't go in:** Anything not established elsewhere in the entry; new sources; a claim without its author; blame framed as a verdict on a person's character.
 
-**How this differs from Security recommendations:** the takeaway is **counterfactual and specific** — what would have changed this outcome. Security recommendations are **general and addressed to an owner** — what any comparable organization should do, including controls this incident only hints at. The takeaway bullets are therefore a subset in substance but not in wording, and each entry links from one to the other.
+**How this differs from Security recommendations:** the takeaway is **counterfactual and specific**, saying what would have changed this outcome. Security recommendations are **general and addressed to an owner**, saying what any comparable organization should do, including controls this incident only hints at. The takeaway bullets are therefore a subset in substance but not in wording, and each entry links from one to the other.
 
 **Write each bullet to stand on its own,** one change per bullet, no cross-references in the text: they are meant to be collected across entries into a single lessons page once there are enough of them, and a bullet that says "as above" cannot travel.
 
@@ -76,9 +76,9 @@ Fields are listed here in the order they appear in an entry. An entry opens with
 - **Every takeaway is a summary, never a new claim.** It compresses what Root cause, Recommendations, Confidence, Corrections and Context already show, and it is attributed the same way.
 
 - **Naming a claim as unsupported requires three things:** the claim, who made it, and what in the record contradicts it or leaves it unestablished. *Unestablished* and *false* are different findings; say which.
-**What qualifies as a political claim** *(provisional — agreed September 2026, not yet exercised on a real claim)*. A statement by a government, official, legislator or candidate enters an entry only when it is **a factual claim about this incident or about the evidence base**, which the record can speak to — for example that no real-world consequences have followed from AI agents, or that developers disclose such events promptly. Three consequences:
+**What qualifies as a political claim** *(provisional, agreed September 2026, not yet exercised on a real claim)*. A statement by a government, official, legislator or candidate enters an entry only when it is **a factual claim about this incident or about the evidence base**, which the record can speak to, for example that no real-world consequences have followed from AI agents, or that developers disclose such events promptly. Three consequences:
 
-- **Predictions and value judgments are context, not takeaways.** That pausing development would forfeit a lead, or that the economic upside outweighs the risk, cannot be tested against an incident record. They are recorded in Sociopolitical and economic context, attributed, and marked as not assessed — saying so is itself informative.
+- **Predictions and value judgments are context, not takeaways.** That pausing development would forfeit a lead, or that the economic upside outweighs the risk, cannot be tested against an incident record. They are recorded in Sociopolitical and economic context, attributed, and marked as not assessed. Saying so is itself informative.
 
 - **The same test applies to every actor.** A company arguing for slower development is making a claim with an interest behind it exactly as a government arguing for speed is, and both are checked the same way. If only one side's claims are ever examined, the section is an argument rather than a record.
 
@@ -144,7 +144,7 @@ Four parts, in this order: the organizations and people, the models, the agents,
 
 **Doesn't go in:** The AI systems themselves (Models and Agents); names given without saying who identified them.
 
-**Rules:** Affected parties are named with attribution — "according to", "as reported by" — naming the source of the identification.
+**Rules:** Affected parties are named with attribution, such as "according to" or "as reported by", naming the source of the identification.
 
 **Example:** I3 — Taiwanese government agencies, identified as the target by the *Financial Times* and confirmed to *The Register*; the firm that discovered the attack does not name the country.
 
@@ -226,7 +226,7 @@ Four parts, in this order: the organizations and people, the models, the agents,
 
 **Doesn't go in:** A single score; vague confidence words with no referent.
 
-**Example:** I3 rests on two primary sources that disagree on how autonomous the attack was — the victim government's statement and the discovering firm's report — and the model used is named only by one Mandarin-language news report.
+**Example:** I3 rests on two primary sources that disagree on how autonomous the attack was, the victim government's statement and the discovering firm's report, and the model used is named only by one Mandarin-language news report.
 
 ## Corrections, disputed claims and allegations — Required
 
@@ -288,7 +288,7 @@ Four parts, in this order: the organizations and people, the models, the agents,
 
 **Example:** `sandbox-escape` · `agentic-collusion` · `evaluation-environment` · `nation-state` · `openai`
 
-**The vocabulary is deliberately not fixed yet.** Nothing consumes tags — there is no index, filter or search over them — and a controlled scheme built for a consumer that does not exist would be a convention with no instances to test it. Tags are written descriptively, and **collisions are resolved when they appear**: a single act should not carry three names across entries. Settled so far — `exposed-credential-reuse` for using credentials someone left public, `credential-harvesting` for taking credentials from a system already entered, `shared-credentials` for one credential spanning workloads that should have been isolated. Prefer a name the entry's own voice would use: `data-pipeline-compromise`, not `data-pipeline-attack`, since [Terminology](terminology.md) reserves *attack* for a claim about malice.
+**The vocabulary is deliberately not fixed yet.** Nothing consumes tags, since there is no index, filter or search over them, and a controlled scheme built for a consumer that does not exist would be a convention with no instances to test it. Tags are written descriptively, and **collisions are resolved when they appear**: a single act should not carry three names across entries. Settled so far are `exposed-credential-reuse` for using credentials someone left public, `credential-harvesting` for taking credentials from a system already entered, `shared-credentials` for one credential spanning workloads that should have been isolated. Prefer a name the entry's own voice would use: `data-pipeline-compromise`, not `data-pipeline-attack`, since [Terminology](terminology.md) reserves *attack* for a claim about malice.
 ## Version history — Required
 
 **Answers:** How has this entry changed over time, and why?

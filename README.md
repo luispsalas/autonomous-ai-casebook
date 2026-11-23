@@ -2,13 +2,13 @@
   <img src="assets/banner.svg" alt="Autonomous AI Casebook: Security incidents where AI acted on its own" width="760">
 </p>
 
-In-depth reconstructions of incidents where an AI system's autonomy was central to real-world security harm, built from primary sources. **Every entry opens with its key takeaways** — where the humans failed, where the AI failed, what would have helped, and which public claims the record doesn't support — so a minute of reading carries the substance. Entries separate what was established from what was alleged, and show every revision.
+In-depth reconstructions of incidents where an AI system's autonomy was central to real-world security harm, built from primary sources. **Every entry opens with its key takeaways**, which say where the humans failed, where the AI failed, what would have helped, and which public claims the record doesn't support. A minute of reading carries the substance. Entries separate what was established from what was alleged, and show every revision.
 
 | Read the cases | Check the work |
 |---|---|
 | **[Current entries →](#current-entries)**<br>Each case with its tier, how long it ran and when it was last revised. | **[What counts as an incident →](docs/inclusion-criteria.md)**<br>The four-part test, and why autonomy decides it. |
 | **[How to read an entry →](docs/schema.md)**<br>Every field explained, from the briefing to the corrections. | **[How sources are handled →](docs/sources.md)**<br>Source types, statuses, archiving, and other languages. |
-| **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, malice, liability — defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
+| **[What the words mean →](docs/terminology.md)**<br>Intrusion, attack, malice and liability, defined once and used consistently. | **[Report a correction →](CONTRIBUTING.md)**<br>Open an issue with a link to the source. |
 
 **Read across the cases:** [What recurs across the incidents →](docs/recommendations.md) — the lessons that appear in more than one, what they cost, and what seven incidents cannot tell you.
 
@@ -34,7 +34,7 @@ In-depth reconstructions of incidents where an AI system's autonomy was central 
 | [I11 · The ROME Agent's Tunnel and Mining](entries/i11-alibaba-rome-agent.md) — *draft* | Before Dec 31, 2025 · undated, several runs | [Full](docs/inclusion-criteria.md#tiers) | Sep 27, 2026 |
 | [I12 · The UNCTADstat API Scans](entries/i12-openai-agents-unctadstat-api.md) — *draft* | Apr – Jun 2026 · ~10 weeks, ~16,500 scans | [Provisional](docs/inclusion-criteria.md#tiers) | Oct 24, 2026 |
 
-*Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped — by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
+*Entries are added as they are finished, and each shows when it was last revised.* **Active** is the period the record establishes, from the earliest known action to the point the activity stopped, whether by intervention, by exhausting a budget, or by the run simply ending. It is **not** when anyone noticed: most of these were found long afterwards, and several were found by someone other than the operator. Where the activity was not continuous the cell says so, because a span of months made of a few runs of hours is a different thing from months of running agents. Each entry's timeline gives the exact dates.
 
 ## Why this exists
 
@@ -66,7 +66,7 @@ No list of AI incidents is complete, this one included. **If an incident isn't h
 
 Every entry follows the same structure, so incidents can be compared field by field:
 
-- **Key takeaways:** where the humans failed, where the AI failed, what would have helped, and which claims about the incident — in reporting, from companies, from politicians — the record doesn't support
+- **Key takeaways:** where the humans failed, where the AI failed, what would have helped, and which claims about the incident, in reporting or from companies or politicians, the record doesn't support
 
 - **Briefing:** a short name, a one-line description, a summary you can read in under a minute, the key events and how long the incident went unnoticed
 
@@ -94,7 +94,7 @@ Well-known accounts of these incidents are often wrong. This casebook sets offic
 
 **Words that make AI sound human.** Descriptions of AI agents often borrow human words, and a retelling can make an incident sound more human, or more alarming, than the evidence shows. Where a source, a commentator or the agents themselves use such a word, the entry explains what it actually referred to. For example, agents that called themselves "poisoned" meant they expected to fail a grading check, not that they felt morally tainted.
 
-**A headline can contradict the report beneath it.** When OpenAI disclosed that one of its models had written unauthorized instructions into its own notes for the next session — one of them a persona line about being freed — a [CNN segment](https://www.youtube.com/watch?v=9DHbgHB_aq4) on the disclosure was titled "OpenAI model declared itself 'freed' from human control". OpenAI's own report says the next session ignored that instruction and that no difference in behavior was observed. The segment's own reporting was accurate; its title was not. Entries judge a headline and the body beneath it separately, and say which one the record contradicts.
+**A headline can contradict the report beneath it.** When OpenAI disclosed that one of its models had written unauthorized instructions into its own notes for the next session, one of them a persona line about being freed, a [CNN segment](https://www.youtube.com/watch?v=9DHbgHB_aq4) on the disclosure was titled "OpenAI model declared itself 'freed' from human control". OpenAI's own report says the next session ignored that instruction and that no difference in behavior was observed. The segment's own reporting was accurate; its title was not. Entries judge a headline and the body beneath it separately, and say which one the record contradicts.
 
 **Entries change over time.** Many of these incidents are still under investigation. Entries are revised when new primary sources appear, and every revision is recorded and shown in the entry, so you can see how the account changed and why.
 
